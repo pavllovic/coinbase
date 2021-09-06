@@ -20,9 +20,8 @@ mixin article-preview(meta, num)
       img(class='article-preview--img' src=require(`Articles/${num}/img/preview/${meta.img.name}-1170w.jpg`).default width='1170' height='520' alt=`${meta.img.alt}`)
     div(class='article-preview--txt border-gradient')
       h2(class='article-preview--header') #{meta.title}.
-      div(class='article-preview--meta')
-        <span>#{meta.date.day}</span> <span>#{meta.date.mounth}</span> <span>#{meta.date.year}</span>
-        <span>| #{meta.tags[0]}</span>
+      div(class='article-preview--meta').
+        #{meta.date.day} #{meta.date.mounth},#{meta.date.year} | #{meta.tags[0]}
       - let text = require(`Articles/${num}/preview-text.md`);
       | !{text}
       a(class='article-preview--link btn' href=`./article-${num}.html`) discover
