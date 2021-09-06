@@ -1,6 +1,6 @@
 - 
   let navMenu = [
-    {txt: 'home', href: ''}, 
+    {txt: 'home', href: 'index.html'}, 
     {txt: 'about us', href: 'about.html'},
     {txt: 'blog', href: 'blog.html'},
     {txt: 'contact us', href: 'contact.html'}]
@@ -10,4 +10,4 @@ nav(class='nav' aria-label='main navigation')
   ul(class='menu' id='menu')
     each item in navMenu
       li(class='menu--item')
-        a(class='menu--link' href=`/${item.href}`) #{item.txt}
+        a(class='menu--link' href=`./${item.href}`) #{item.txt}

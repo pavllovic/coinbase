@@ -10,9 +10,14 @@
   margin: auto;
   background-color: var(--bg-light);
   border-radius: calc(var(--bl) * 0.75);
-  transition-duration: 0.25s, 0.25s, 0.25s, 0.25s;
+
+  /* transition-duration: 0.25s, 0.25s, 0.25s, 0.25s;
   transition-property: height, min-height, opacity, transform;
-  transition-timing-function: ease-in, ease-in, ease-in, ease-in;
+  transition-timing-function: ease-in, ease-in, ease-in, ease-in; */
+  transition-duration: 0.25s, 0.25s, 0.25s;
+  transition-property: min-height, opacity, transform;
+  transition-timing-function: ease-in, ease-in, ease-in;
+  will-change: min-height;
 }
 
 .modal-box-lg {
@@ -21,12 +26,16 @@
 
 .modal-wrap[aria-hidden='true'] .modal-box {
   opacity: 0;
-  transition-delay: 0.5s, 0.5s, 0s, 0s;
+
+  /* transition-delay: 0.5s, 0.5s, 0s, 0s; */
+  transition-delay: 0.5s, 0s, 0s;
 }
 
 .modal-wrap[aria-hidden='false'] .modal-box {
   opacity: 1;
-  transition-delay: 0.25s, 0.25s, 0.25s, 0.25s;
+
+  /* transition-delay: 0.25s, 0.25s, 0.25s, 0.25s; */
+  transition-delay: 0.25s, 0.25s, 0.25s;
 }
 
 @keyframes modal-box_show {
