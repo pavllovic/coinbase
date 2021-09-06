@@ -1,0 +1,21 @@
+:root {
+  --font-main: 'Poppins', sans-serif;
+}
+
+/* @font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 400;
+  src:
+    url('Fonts/poppins-regular.woff2') format('woff2'),
+    url('Fonts/poppins-regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 700;
+  src:
+    url('Fonts/poppins-bold.woff2') format('woff2'),
+    url('Fonts/poppins-bold.woff') format('woff');
+} */

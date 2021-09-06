@@ -1,0 +1,11 @@
+.review--title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+@media (min-width: 60em) {
+  .review--title {
+    font-size: var(--text-xs);
+  }
+}

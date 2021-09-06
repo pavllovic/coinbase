@@ -1,0 +1,23 @@
+@import './article-hero/article-hero.css';
+@import './article--txt/article--txt.css';
+@import './article--footer.css';
+@import './article--share.css';
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.article--footer {
+  max-width: calc(75rem + var(--fluid-h-sm) * 2);
+  padding: 0 var(--fluid-h-sm);
+  margin: 0 auto;
+  margin-top: var(--bl);
+  margin-top: calc(var(--bl) / 2);
+}
+
+@media (min-width: 47.25em) {
+  .article--footer {
+    margin-top: calc(var(--bl) * 2);
+  }
+}

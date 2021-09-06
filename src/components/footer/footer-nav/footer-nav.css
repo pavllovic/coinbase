@@ -1,0 +1,21 @@
+@import './footer-nav--item.css';
+@import './footer-nav--link.css';
+
+.footer-nav {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: calc((4rem - var(--text-xs)) / -2) 0;
+  color: var(--color-text-gray);
+  cursor: pointer;
+  font-size: var(--text-xs);
+  line-height: 2;
+}
+
+@media (min-width: 48.75em) {
+  .footer-nav {
+    justify-content: space-between;
+    margin: calc(var(--text-xs) / -2) 0;
+  }
+}

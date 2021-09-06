@@ -1,0 +1,9 @@
+@import './pagination--item/pagination--item.css';
+@import './pagination--link.css';
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -5px;
+}

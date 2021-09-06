@@ -1,0 +1,6 @@
+.hero--topic {
+  margin-bottom: calc(var(--bl) - var(--text-xs) * 1.5);
+  font-size: var(--text-xs);
+  line-height: 1.5;
+  text-transform: uppercase;
+}

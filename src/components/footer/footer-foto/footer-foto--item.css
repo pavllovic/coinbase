@@ -1,0 +1,12 @@
+.footer-foto--item {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  background-color: #fff;
+}
+
+@supports (display: grid) {
+  .footer-foto--item {
+    margin: 0;
+  }
+}

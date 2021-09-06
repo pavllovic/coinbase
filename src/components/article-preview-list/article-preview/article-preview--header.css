@@ -1,0 +1,26 @@
+.article-preview--header {
+  display: -webkit-box;
+  overflow: hidden;
+  max-width: 31rem;
+  max-height: calc(var(--bl) * 2);
+  margin: calc(var(--bl) / 2) 0;
+  -webkit-box-orient: vertical;
+  color: hsl(0, 0%, 53%);
+  font-size: var(--text-title);
+  font-weight: 700;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  line-height: var(--bl);
+  text-transform: uppercase;
+  transition-delay: 0.15s;
+  transition-duration: 0.25s;
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+}
+
+@supports (background-clip: text) {
+  .article-preview--header {
+    background: var(--text-gradient);
+    background-clip: text;
+  }
+}

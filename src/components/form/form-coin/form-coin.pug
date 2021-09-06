@@ -1,0 +1,22 @@
+mixin form-coin(type, name)
+  include ../form-popup/form-popup.pug
+  form(class='form' name=`form-coin-${type}`)
+    - 
+      let coinSuccessPopup = {
+        type: 'success',
+        controls: [{type: 'close-popup', txt: 'close'}]
+      }
+      let coinErrorPopup = {
+        type: 'error',
+        controls: [{type: 'close-popup', txt: 'close'}, {type: 'resend-form', txt: 'retry'}]
+      }
+    +form-popup(coinSuccessPopup)
+    +form-popup(coinErrorPopup)
+    div(class='form--field')
+      input(id=`${type}-value` type='text' pattern='[0-9]*' inputmode='numeric' placeholder=' ' name='amount' required)
+      label(for=`${type}-value`) #{name} Value
+      div(class='error' role='status' aria-live='polite' data-error='amount')
+    div(class='form--field')
+      div(class='input-bg')
+        input(readonly name='result')
+    button(class='btn' type='submit') proceed

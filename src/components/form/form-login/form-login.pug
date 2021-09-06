@@ -1,0 +1,18 @@
+include ../form-popup/form-popup.pug
+form(class='form' name='form-login' id='form-login')
+  - 
+    let loginErrorPopup = {
+      type: 'error',
+      controls: [{type: 'close-popup', txt: 'close'}, {type: 'resend-form', txt: 'retry'}]
+    }
+  +form-popup(loginErrorPopup)
+  div(class='form--field')
+    input(id='login-email' type='text' inputmode='email' placeholder=' ' name='email' required)
+    label(for='login-email') Email
+    div(class='error' role='status' aria-live='polite' data-error='email')
+  div(class='form--field')
+    input(id='login-password' type='password' placeholder=' ' name='password' required)
+    label(for='login-password') Password
+    div(class='error' role='status' aria-live='polite' data-error='password')
+  a(href='#' class='form--link') i forgot my password?
+  button(class='btn' type='submit') login

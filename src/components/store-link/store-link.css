@@ -1,0 +1,14 @@
+@import './store-link--link.css';
+
+.store-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 17em) {
+  .store-link {
+    flex-direction: row;
+  }
+}

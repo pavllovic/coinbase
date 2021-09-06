@@ -1,0 +1,14 @@
+@import './article-preview/article-preview.css';
+
+.article-preview-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 47em) {
+  .article-preview-list {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,30 @@
+.modal--rate {
+  width: 100%;
+  margin: var(--bl) auto;
+  font-size: var(--text-fluid-md);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.modal--rate-value {
+  font-weight: 700;
+}
+
+#modal-trade-card .modal--rate-currency {
+  text-transform: capitalize;
+}
+
+#modal-trade-coin .modal--rate-currency {
+  text-transform: uppercase;
+}
+
+.modal--rate::after {
+  display: block;
+  width: 100%;
+  max-width: 59.2rem;
+  height: 0.1rem;
+  margin: 0 auto;
+  margin-top: calc(var(--bl) * 0.5);
+  background-color: hsl(0, 0%, 80%, 1);
+  content: '';
+}

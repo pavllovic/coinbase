@@ -1,0 +1,59 @@
+@import './person--data.css';
+@import './person--name.css';
+@import './person--post.css';
+
+.person {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 17rem;
+  height: calc(100vw - var(--fluid-h-sm) * 2);
+  max-height: 17rem;
+  align-items: center;
+  justify-content: center;
+  margin: calc(var(--bl) / 4);
+  background: linear-gradient(178deg, hsl(343, 97%, 72%, 0.4) -13.6%, hsl(245, 77%, 44%, 0.4) 158.3%), hsl(0, 0%, 77%);
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 5px 0 hsla(0, 0%, 0%, 0.1);
+  color: var(--color-text-light);
+}
+
+@media (min-width: 60em) {
+  .person {
+    margin: 0;
+    box-shadow: 0 50px 100px 0 hsla(0, 0%, 0%, 0.1);
+  }
+
+  .person:nth-child(3) {
+    z-index: 3;
+    width: 25%;
+    max-width: 30rem;
+    height: calc((100vw - var(--fluid-h-sm) * 2) / 100 * 24);
+    max-height: 28.5rem;
+  }
+
+  .person:nth-child(2),
+  .person:nth-child(4) {
+    z-index: 2;
+    width: 23%;
+    max-width: 27rem;
+    height: calc((100vw - var(--fluid-h-sm) * 2) / 100 * 20);
+    max-height: 23rem;
+    margin: 0 -1.5rem;
+  }
+
+  .person:nth-child(1),
+  .person:nth-child(5) {
+    z-index: 1;
+    width: 17%;
+    max-width: 20rem;
+    height: calc((100vw - var(--fluid-h-sm) * 2) / 100 * 16);
+    max-height: 18.5rem;
+    box-shadow: none;
+  }
+
+  .person_right:nth-child(4) .person--data,
+  .person_right:nth-child(5) .person--data {
+    padding-left: 17%;
+  }
+}

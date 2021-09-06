@@ -1,0 +1,11 @@
+@import './modal-controls--btn/modal-controls--btn.css';
+
+.modal-controls {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 20px var(--fixed-h-md);
+}

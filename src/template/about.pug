@@ -1,0 +1,88 @@
+extends ./layout/base.pug
+
+block preload
+  link(rel='preload' href=require('Images/hero/about-1098w.webp').default as='image' 
+      media='(min-width: 512px) and (-webkit-min-device-pixel-ratio: 2)')
+  link(rel='preload' href=require('Images/hero/about-549w.webp').default as='image' 
+      media='(min-width: 512px) and (max-width: 959px) and (-webkit-max-device-pixel-ratio: 1.5),' +
+            '(min-width: 1110px) and (-webkit-max-device-pixel-ratio: 1.5)')
+  link(rel='preload' href=require('Images/hero/about-414w.webp').default as='image' 
+      media='(min-width: 960px) and (max-width: 1099px) and (-webkit-max-device-pixel-ratio: 1.5)')
+  //- link(rel='preload' href=require('Fonts/poppins-regular.woff2').default as='font' type='font/woff2')
+
+block content
+  include ../components/header/header.pug
+  main
+    section(class='hero-wrap')
+      div(class='hero hero-about')
+        div(class='hero-txt')
+          div(class='hero--topic') home/about us
+          h1(class='hero--header') <span>Great service,</br>Professional support</span>
+          p(class='hero--msg') CoinBase is a platform for trading your bitcoin and giftcard at the best rate, why not give us a trial.
+        picture
+          source(srcset=`${require('Images/hero/about-414w.webp').default} 414w, 
+                        ${require('Images/hero/about-549w.webp').default} 549w,
+                        ${require('Images/hero/about-1098w.webp').default} 1098w` 
+                sizes='(min-width: 512px) and (max-width: 959px) 549px,' + 
+                      '(min-width: 960px) and (max-width: 1099px) 414px,' +
+                      '(min-width: 1110px) 549px' 
+                type='image/webp')
+          source(srcset=`${require('Images/hero/about-414w.png').default} 414w, 
+                        ${require('Images/hero/about-549w.png').default} 549w,
+                        ${require('Images/hero/about-1098w.webp').default} 1098w`  
+                sizes='(min-width: 512px) and (max-width: 959px) 549px,' + 
+                      '(min-width: 960px) and (max-width: 1099px) 414px,' +
+                      '(min-width: 1110px) 549px'
+                type='image/png')
+          img(class='hero--img' src=require('Images/hero/about-549w.png').default width='549' height='425' alt='text img' loading='lazy')
+    div(class='about-wrap')
+      include ../components/cite/cite.pug
+      - 
+        let cite = {
+          txt: 'Morbi sagittis ultricies ex, a tempus lorem suscipit non. Donec semper leo ut lobortis condimentum. Orci varius natoque penatibus et magnis',
+          source: 'Ramon Ridwan • CEO CoinBase'
+        }
+      +cite(cite.txt, cite.source)
+      section(class='box box-about border-gradient')
+        picture(class='box-about--img')
+          source(srcset=`${require('Images/promo/1-414w.webp').default} 414w,
+                        ${require('Images/promo/1-541w.webp').default} 541w,
+                        ${require('Images/promo/1-1082w.webp').default} 1082w`
+                sizes='(min-width: 807px) 541px, 414px'  
+                type='image/webp')
+          source(srcset=`${require('Images/promo/1-414w.png').default} 414w, 
+                        ${require('Images/promo/1-541w.png').default} 541w,
+                        ${require('Images/promo/1-1082w.png').default} 1082w`
+                sizes='(min-width: 807px) 541px, 414px' 
+                type='image/png')
+          img(src=require('Images/promo/1-541w.png').default width='541' height='393' alt='text img' loading='lazy')
+        h2(class='subheading') 
+          span About CoinBase
+        p(class='box-about--msg text-md'). 
+          CoinBase is an online site and a p2admin platform that allows users to buy, sell and/ or exchange digital and fiat assets safely. 
+          Owned and managed by CoinBase Business Services established and Incoperated in Nigeria.
+        div(class='box-about--icons')
+          include ../images/icon/drag.svg
+          include ../images/icon/medal.svg
+          include ../images/icon/people.svg
+          include ../images/icon/support.svg
+      section(class='box box-history')
+        h2(class='subheading') 
+          span Our history
+        include ../components/history-graph/history-graph.pug
+      section(class='box box-team')
+        h2(class='subheading') 
+          span Meet the team
+        p(class='box-team--msg text-md') Meet the team that  makes the process of this system fast and painless as possible to provide you with good result
+        include ../components/team-gallery/team-gallery.pug
+  section(class='box box-subscribe')
+    h2(class='subheading') 
+      span Subscribe our newsletter
+    p(class='box-subscribe--msg text-md') Subscribe to our newsletter for daily/weekly update of our products and services.
+    include ../components/form/form-subscribe/form-subscribe.pug
+  include ../components/footer/footer.pug
+  include ../components/logo/svg/spriteLogoIcon.svg
+  include ../images/icon/card/spriteCardIcon.svg
+  include ../components/modal/modal-auth/modal-auth.pug
+  include ../components/modal/modal-trade/modal-trade-coin.pug
+  include ../components/modal/modal-trade/modal-trade-card.pug

@@ -1,0 +1,9 @@
+@import './combobox--options.css';
+@import './combobox--item.css';
+
+.combobox {
+  position: relative;
+  border-radius: inherit;
+  cursor: pointer;
+  text-align: left;
+}

@@ -1,0 +1,15 @@
+.card--name {
+  color: var(--color-text-light);
+  font-family: var(--font-main);
+  font-size: var(--text-fluid-md);
+  line-height: calc(var(--bl) * 0.5);
+}
+
+.card-stm .card--name {
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.card-etc .card--name {
+  letter-spacing: 0.1rem;
+}

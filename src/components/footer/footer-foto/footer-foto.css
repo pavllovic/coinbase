@@ -1,0 +1,25 @@
+@import './footer-foto--item.css';
+
+.footer-foto {
+  display: flex;
+  width: 100%;
+  max-width: 330px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -5px;
+}
+
+@media (min-width: 23em) {
+  .footer-foto {
+    justify-content: flex-start;
+  }
+}
+
+@supports (display: grid) {
+  .footer-foto {
+    display: grid;
+    margin: 0;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 70px);
+  }
+}

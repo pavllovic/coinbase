@@ -1,0 +1,13 @@
+{
+  "date": {
+    "day": "01",
+    "mounth": "dec",
+    "year": 2019
+  },
+  "title": "Exchange 5 products and get 1 free product",
+  "tags": ["lifestyle"],
+  "img": {
+    "name": "preview",
+    "alt": "alt-text"
+  }
+}

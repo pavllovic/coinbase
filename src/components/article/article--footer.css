@@ -1,0 +1,19 @@
+@import './article--tags/article--tags.css';
+@import './article--sibling/article--sibling.css';
+
+.article--footer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article--sibling {
+  margin-top: calc(var(--bl) / 2);
+}
+
+.article--tags,
+.article--share {
+  margin-bottom: var(--bl);
+}

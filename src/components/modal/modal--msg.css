@@ -1,0 +1,7 @@
+.modal--msg {
+  width: 100%;
+  margin-bottom: calc(var(--bl) + (var(--bl) - var(--text-fluid-md) * 1.5));
+  font-size: var(--text-fluid-md);
+  line-height: 1.5;
+  text-align: center;
+}

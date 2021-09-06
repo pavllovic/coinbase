@@ -1,0 +1,7 @@
+include ../modal-coin/modal-coin.pug
+
+div(class='modal-wrap' id='modal-trade-coin' aria-hidden='true' tabindex='-1')
+  div(class='modal-box modal-box-lg')
+    include ../modal-types/modal-types-coin.pug
+    +modal-coin('btc', 'Bitcoin')
+    +modal-coin('eth', 'Ethereum')

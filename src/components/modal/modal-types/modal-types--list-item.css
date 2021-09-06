@@ -1,0 +1,37 @@
+.modal-types--list-item {
+  display: block;
+  flex-basis: 31rem;
+  flex-shrink: 1;
+  padding: 0;
+  border: none;
+  margin: 15px;
+  background: none;
+  border-radius: 15px;
+  box-shadow: 0 0 0 0 hsla(0, 0%, 0%, 0.3);
+  cursor: pointer;
+  transition: box-shadow ease-in 0.15s;
+}
+
+.modal-types--list_card .modal-types--list-item {
+  flex-basis: 23rem;
+  margin: 10px;
+}
+
+.modal-types--list_card .modal-types--list-item .card {
+  height: 16rem;
+  justify-content: flex-end;
+}
+
+.modal-types--list-item:hover {
+  box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.3);
+}
+
+.modal-types--list-item:active {
+  box-shadow: 0 0 5px 0 hsla(0, 0%, 0%, 0.3);
+}
+
+@supports (display: grid) {
+  .modal-types--list_card .modal-types--list-item {
+    margin: 0;
+  }
+}

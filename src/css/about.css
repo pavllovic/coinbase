@@ -1,0 +1,134 @@
+@import './common.css';
+@import '../components/subheading/subheading.css';
+@import '../components/cite/cite.css';
+@import '../components/border-gradient/border-gradient.css';
+@import '../components/team-gallery/team-gallery.css';
+@import '../components/history-graph/history-graph.css';
+
+.about-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--fluid-h-sm);
+  padding-top: var(--bl);
+}
+
+@media (min-width: 60em) {
+  .about-wrap {
+    padding-top: 0;
+  }
+}
+
+/* cite */
+.about-wrap .cite {
+  max-width: 51rem;
+  margin: 0 auto;
+}
+
+/* ------------------------ */
+
+
+/* box */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.box .text-md {
+  margin: 0 auto;
+  margin-top: var(--bl);
+}
+
+/* ------------------------ */
+
+
+/* box-about */
+.box-about {
+  width: 100%;
+  max-width: 104.8rem;
+  padding: var(--bl) 20px;
+  margin: calc(var(--bl) * 2) auto;
+  background-color: var(--bg-light);
+  border-radius: 30px;
+}
+
+.box-about--img {
+  display: block;
+  margin-bottom: var(--bl);
+}
+
+.box-about--img img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(var(--bl) * 8);
+  margin: 0 auto;
+}
+
+.box-about--msg {
+  max-width: 54rem;
+}
+
+.box-about--icons {
+  display: flex;
+  min-height: var(--bl);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 calc(var(--bl) * -0.375);
+  margin-top: var(--bl);
+  margin-bottom: calc(var(--bl) / 2);
+}
+
+.box-about--icons svg {
+  width: calc(var(--bl) * 0.875);
+  margin: 0 calc(var(--bl) * 0.375);
+}
+
+/* ------------------------ */
+
+
+/* box-team */
+.box-history {
+  margin: calc(var(--bl) / 2) auto;
+}
+
+.box-history .history-graph {
+  margin-top: calc(var(--bl) * 2);
+}
+
+/* ------------------------ */
+
+
+/* box-team */
+.box-team {
+  margin-top: calc(var(--bl) * 2.5);
+}
+
+.box-team .team-gallery {
+  margin-top: calc(var(--bl) * 1.5);
+}
+
+.box-team--msg {
+  max-width: 54rem;
+}
+
+/* ------------------------ */
+
+
+/* box-subscribe */
+.box-subscribe {
+  padding: calc(var(--bl) * 2.5) var(--fluid-h-sm);
+}
+
+.box-subscribe .form-subscribe {
+  margin-top: calc(var(--bl) * 1.25);
+}
+
+.box-subscribe--msg {
+  max-width: 37rem;
+  align-self: center;
+}
+
+/* ------------------------ */

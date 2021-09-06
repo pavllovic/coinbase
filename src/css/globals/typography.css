@@ -1,0 +1,105 @@
+:root {
+  font-size: 62.5%;
+
+  --minW: 320;
+  --maxW: 960;
+  --ratio: (100vw - var(--minW) * 1px) / (var(--maxW) - var(--minW));
+  --maxL: 40;
+  --minL: 30;
+  --bl:
+    max(
+      var(--minL) / 10 * 1rem,
+      min(
+        var(--minL) / 10 * 1rem + (var(--maxL) - var(--minL)) * var(--ratio),
+        var(--maxL) / 10 * 1rem
+      )
+    );
+
+  /* static font-size */
+  --text-xss: 1rem;
+  --text-xs: 1.2rem;
+  --text-sm: 1.4rem;
+
+  /* fluid font-size */
+  --minF-sm: 13;
+  --maxF-sm: 14;
+  --text-fluid-sm:
+    max(
+      var(--minF-sm) / 10 * 1rem,
+      min(
+        var(--minF-sm) / 10 * 1rem + (var(--maxF-sm) - var(--minF-sm)) * var(--ratio),
+        var(--maxF-sm) / 10 * 1rem
+      )
+    );
+  --minF-md: 14;
+  --maxF-md: 16;
+  --text-fluid-md:
+    max(
+      var(--minF-md) / 10 * 1rem,
+      min(
+        var(--minF-md) / 10 * 1rem + (var(--maxF-md) - var(--minF-md)) * var(--ratio),
+        var(--maxF-md) / 10 * 1rem
+      )
+    );
+  --minF-lg: 15;
+  --maxF-lg: 18;
+  --text-fluid-lg:
+    max(
+      var(--minF-lg) / 10 * 1rem,
+      min(
+        var(--minF-lg) / 10 * 1rem + (var(--maxF-lg) - var(--minF-lg)) * var(--ratio),
+        var(--maxF-lg) / 10 * 1rem
+      )
+    );
+  --minF-xl: 18;
+  --maxF-xl: 32;
+  --text-fluid-xl:
+    max(
+      var(--minF-xl) / 10 * 1rem,
+      min(
+        var(--minF-xl) / 10 * 1rem + (var(--maxF-xl) - var(--minF-xl)) * var(--ratio),
+        var(--maxF-xl) / 10 * 1rem
+      )
+    );
+  --minF-heading: 26;
+  --maxF-heading: 40;
+  --text-heading:
+    max(
+      var(--minF-heading) / 10 * 1rem,
+      min(
+        var(--minF-heading) / 10 * 1rem + (var(--maxF-heading) - var(--minF-heading)) * var(--ratio),
+        var(--maxF-heading) / 10 * 1rem
+      )
+    );
+  --minF-subheading: 20;
+  --maxF-subheading: 28;
+  --text-subheading:
+    max(
+      var(--minF-subheading) / 10 * 1rem,
+      min(
+        var(--minF-subheading) / 10 * 1rem + (var(--maxF-subheading) - var(--minF-subheading)) * var(--ratio),
+        var(--maxF-subheading) / 10 * 1rem
+      )
+    );
+  --minF-title: 18;
+  --maxF-title: 24;
+  --text-title:
+    max(
+      var(--minF-title) / 10 * 1rem,
+      min(
+        var(--minF-title) / 10 * 1rem + (var(--maxF-title) - var(--minF-title)) * var(--ratio),
+        var(--maxF-title) / 10 * 1rem
+      )
+    );
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.text-md {
+  font-size: var(--text-fluid-md);
+  line-height: var(--bl);
+}

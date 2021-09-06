@@ -1,0 +1,31 @@
+:root {
+  /* project colors */
+  --color-main: hsl(343, 97%, 72%);
+  --color-second: hsl(245, 77%, 44%);
+
+  /* text colors */
+  --color-text: hsl(0, 0%, 20%);
+  --color-text-light: hsl(0, 0%, 100%);
+  --color-text-gray: hsl(0, 0%, 64%);
+
+  /* shades colors */
+  --black: hsl(0, 0%, 0%, 1);
+  --white: hsl(0, 0%, 100%, 1);
+
+  /* bg color */
+  --bg-light: hsl(0, 0%, 100%);
+  --bg-dark: hsl(0, 0%, 8%);
+
+  /* gradients */
+  --bg-gradient-s: linear-gradient(178deg, var(--color-main) -10.6%, var(--color-second) 190.5%);
+  --bg-gradient-md: linear-gradient(178deg, var(--color-main) -20.6%, var(--color-second) 120.5%);
+  --bg-gradient-l: linear-gradient(178deg, var(--color-main) -30.6%, var(--color-second) 158.5%);
+  --bg-gradient-xl: linear-gradient(178deg, var(--color-main) -40.6%, var(--color-second) 170.5%);
+  --hero-gradient: linear-gradient(174.5deg, var(--color-main) -12.4%, var(--color-second) 88.6%);
+  --btn-gradient: linear-gradient(178deg, var(--color-main) -13.6%, var(--color-second) 158.5%);
+  --text-gradient: linear-gradient(178deg, var(--color-main) -5.6%, var(--color-second) 190.5%);
+  --border-gradient: var(--btn-gradient);
+
+  /* state color */
+  --color-disabled: hsl(0, 0%, 53%);
+}

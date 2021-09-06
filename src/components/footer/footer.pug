@@ -1,0 +1,17 @@
+include ./footer--title/footer--title.pug
+footer(class='footer-wrap')
+  div(class='footer')
+    div(class='footer-group footer-group_info')
+      a(class='footer--logo' href='/')
+        include ../logo/logo.pug
+      p(class='footer--txt') Fusce ut elit aliquet, fermentum leo vel, tempus nunc. Fusce eu rhoncus augue. Fusce vel metus pharetra, fermentum
+      include ../social-link/social-link.pug
+    section(class='footer-group footer-group_nav')
+      +footer--title('CoinBase Links')
+      include ./footer-nav/footer-nav.pug
+    section(class='footer-group footer-group_contact')
+      +footer--title('Contact Us')
+      include ./footer-contacts/footer-contacts.pug
+    section(class='footer-group footer-group_foto')
+      +footer--title('CoinBase Instagram')
+      include ./footer-foto/footer-foto.pug

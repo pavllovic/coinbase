@@ -1,0 +1,11 @@
+include ../../form/form-card/form-card.pug
+include ../modal-controls/modal-controls.pug
+
+mixin modal-card(type, name)
+  div(class=`modal modal-lg modal-${type}` id=`modal-${type}` aria-hidden='true' role='dialog' aria-label='form sell gift card' aria-modal='true' tabindex='-1')
+    +modal-controls(true, true) 
+    +card(type, name)
+    p(class='modal--rate') <span class='modal--rate-value'>N360.00</span> is our conversion rate for every <span class='modal--rate-currency'>#{name}</span> card on this platform.
+    p(class='modal--form-note'). 
+      The total value you derived here will be the amount you’ll be receiving during the total transaction process 
+    +form-card(type)

@@ -1,0 +1,26 @@
+.table--tr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: calc(var(--bl) / 2);
+}
+
+.table--tr:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 19em) {
+  .table--tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 60em) {
+  .table--tr {
+    max-width: 27rem;
+  }
+}

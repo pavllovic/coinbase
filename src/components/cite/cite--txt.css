@@ -1,0 +1,28 @@
+.cite--txt {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: calc(var(--bl) / 2);
+  color: var(--color-main);
+  font-size: var(--text-fluid-lg);
+  font-weight: 700;
+  line-height: var(--bl);
+}
+
+.cite--txt::after {
+  position: absolute;
+  bottom: calc(var(--bl) / -2);
+  width: 2.77em;
+  height: calc(var(--text-fluid-lg) / 2.57);
+  background-color: var(--color-main);
+  border-radius: 0.4rem;
+  content: '';
+}
+
+@supports (background-clip: text) {
+  .cite--txt span {
+    background: var(--text-gradient);
+    background-clip: text;
+    color: transparent;
+  }
+}

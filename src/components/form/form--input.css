@@ -1,0 +1,72 @@
+input,
+.combobox--input {
+  border: 1px solid hsl(0, 0%, 82%);
+  background-color: var(--bg-light);
+  border-radius: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  transition-duration: 0.25s;
+  transition-property: box-shadow;
+  transition-timing-function: ease-in-out;
+}
+
+.combobox--input {
+  height: calc(var(--bl) * 1.5);
+}
+
+input,
+.combobox--input,
+.combobox--item {
+  padding: calc(var(--bl) * 0.5 - 1px) 1ch;
+}
+
+@media (min-width: 16em) {
+  .combobox--input {
+    position: relative;
+    padding-right: calc(1ch + 13%);
+  }
+
+  .combobox--input::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(1ch + 13%);
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.99977 6.79602L6.79578 11.592L11.5918 6.79602' stroke='%23979797' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-position: 1ch center;
+    background-repeat: no-repeat;
+    content: '';
+    transition-duration: 0.15s, 0.15s;
+    transition-property: transform, opacity;
+    transition-timing-function: ease-in, ease-in;
+  }
+
+  .combobox--input[aria-expanded='true']::after {
+    opacity: 0;
+    transform: scaleY(0.3);
+  }
+}
+
+/* for gradient border */
+.input-bg {
+  background: var(--border-gradient);
+  border-radius: inherit;
+}
+
+.input-bg input {
+  width: 100%;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+/* for dashed gradient border */
+.input-bg input[name='result'] {
+  border: 1px dashed #fff;
+}
+
+.input_error,
+.input_error ~ .combobox--input {
+  box-shadow: 0 0 0 2px hsl(351, 100%, 81%);
+}

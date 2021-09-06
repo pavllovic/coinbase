@@ -1,0 +1,5 @@
+- let comments = require('Components/reviews-grid/reviews.json');
+include ./review/review.pug
+ul(class='reviews-grid' id='reviews-grid')
+  each comment in comments
+    +review(comment)

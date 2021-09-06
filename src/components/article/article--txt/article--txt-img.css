@@ -1,0 +1,19 @@
+.article--txt-img {
+  display: block;
+  margin-top: calc(var(--bl) * 1.125);
+  margin-bottom: calc(var(--bl) * 1.125);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.article--txt-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 47.25em) {
+  .article--txt-img_right {
+    margin-left: calc(var(--bl) * 1.25);
+    float: right;
+  }
+}

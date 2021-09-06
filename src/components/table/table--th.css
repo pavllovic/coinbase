@@ -1,0 +1,19 @@
+.table--th {
+  padding: calc(var(--bl) / 2) 0;
+  border-bottom: 1px solid hsl(0, 0%, 73%);
+  margin-bottom: var(--bl);
+  color: var(--color-main);
+  font-size: var(--text-fluid-lg);
+  font-weight: 700;
+  line-height: calc(var(--bl) / 2);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@supports (background-clip: text) {
+  .table--th {
+    background: var(--text-gradient);
+    background-clip: text;
+    color: transparent;
+  }
+}

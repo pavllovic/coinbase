@@ -1,0 +1,7 @@
+.cite--source {
+  display: block;
+  margin-top: calc(var(--bl) / 2);
+  font-size: var(--text-sm);
+  font-style: normal;
+  line-height: calc(var(--bl) * 0.5);
+}

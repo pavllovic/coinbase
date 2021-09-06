@@ -1,0 +1,18 @@
+include ../modal-controls/modal-controls.pug
+include ../../card/card.pug
+
+div(class='modal modal-types' id='modal-types-card' aria-hidden='true' role='dialog' aria-label='choose product' aria-modal='true' tabindex='-1')
+  +modal-controls(false, true) 
+  h2(class='modal--header') Got Gift Cards For Sale?
+  p(class='modal--msg') Choose your preferred card type to continue the exchange process
+  div(class='modal-types--list modal-types--list_card')
+    button(class='modal-types--list-item' data-modal='amz')
+      +card('amz', 'Amazon')
+    button(class='modal-types--list-item' data-modal='as')
+      +card('as', 'App Store & iTunes')
+    button(class='modal-types--list-item' data-modal='stm')
+      +card('stm', 'STEAM')
+    button(class='modal-types--list-item' data-modal='gp')
+      +card('gp', 'Google Play')
+    button(class='modal-types--list-item' data-modal='etc')
+      +card('etc', 'OTHERS')

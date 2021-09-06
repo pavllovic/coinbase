@@ -1,0 +1,17 @@
+.header--logo {
+  border-radius: 5px;
+}
+
+.header--logo .logo--text {
+  display: none;
+}
+
+@media (min-width: 23em) {
+  .header--logo {
+    margin-top: calc(var(--bl) * -0.35);
+  }
+
+  .header--logo .logo--text {
+    display: block;
+  }
+}

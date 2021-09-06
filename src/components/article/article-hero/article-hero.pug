@@ -1,0 +1,20 @@
+mixin article-hero(meta)
+  header(class='article-hero')
+    h1(class='article-hero--heading') #{meta.title}
+    div(class='article-hero--date')
+      <span>#{meta.date.day}</span> <span>#{meta.date.mounth}</span> <span>#{meta.date.year}</span>
+      <span>| #{meta.tags[0]}</span>
+    picture
+      source(srcset=`${require(`Articles/${num}/img/preview/${meta.img.name}-780w.webp`).default} 780w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-1170w.webp`).default} 1170w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-1756w.webp`).default} 1756w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-2340w.webp`).default} 2340w`
+            sizes='100vw' 
+            type='image/webp')
+      source(srcset=`${require(`Articles/${num}/img/preview/${meta.img.name}-780w.jpg`).default} 780w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-1170w.jpg`).default} 1170w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-1756w.webp`).default} 1756w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-2340w.webp`).default} 2340w`
+            sizes='100vw' 
+            type='image/jpg')
+      img(class='article-hero--img' src=require(`Articles/${num}/img/preview/${meta.img.name}-1170w.jpg`).default alt=`${meta.img.alt}`)

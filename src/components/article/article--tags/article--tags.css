@@ -1,0 +1,9 @@
+.article--tags {
+  margin-right: 20px;
+  font-size: var(--text-fluid-md);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: capitalize;
+}

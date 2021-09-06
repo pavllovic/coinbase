@@ -1,0 +1,5 @@
+.article-form--msg {
+  margin-top: calc(var(--bl) * 0.4);
+  font-size: var(--text-fluid-md);
+  line-height: 1.5;
+}

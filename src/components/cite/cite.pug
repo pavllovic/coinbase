@@ -1,0 +1,6 @@
+mixin cite(txt, source)
+  figure(class='cite')
+    blockquote(class='cite--txt') 
+      span "#{txt}"
+    figcaption
+      cite(class='cite--source') #{source}

@@ -1,0 +1,24 @@
+.modal-types--list {
+  display: flex;
+  width: calc(100% + 30px);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+}
+
+.modal-types--list_card {
+  display: inline-flex;
+  width: calc(100% + 20px);
+  margin: -10px;
+}
+
+@supports (display: grid) {
+  .modal-types--list_card {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    grid-column-gap: 2rem;
+    grid-row-gap: 35px;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 23rem));
+  }
+}

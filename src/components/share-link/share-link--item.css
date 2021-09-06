@@ -1,0 +1,28 @@
+.share-link--item {
+  width: 37px;
+  height: 37px;
+  margin-right: calc(var(--bl) * 0.4);
+  background: currentColor;
+  border-radius: 50%;
+  transition: box-shadow 0.15s ease-out;
+}
+
+.share-link--item:last-child {
+  margin-right: 0;
+}
+
+.share-link--item:hover {
+  box-shadow: 0 0 5px 0 currentColor;
+}
+
+.share-link--item-tw {
+  color: hsla(202, 82%, 46%, 1);
+}
+
+.share-link--item-fb {
+  color: hsla(237, 62%, 43%, 1);
+}
+
+.share-link--item-yt {
+  color: hsla(353, 98%, 41%, 1);
+}

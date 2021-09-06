@@ -1,0 +1,11 @@
+.article-preview--meta {
+  font-size: var(--text-xs);
+  line-height: calc(var(--bl) / 2);
+  text-transform: uppercase;
+}
+
+@media (min-width: 60em) {
+  .article-preview--meta {
+    font-size: var(--text-xss);
+  }
+}

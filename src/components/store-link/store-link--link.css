@@ -1,0 +1,16 @@
+.store-link--link {
+  height: 2.8rem;
+  margin: calc(var(--bl) / 4) 0;
+  border-radius: 0.4rem;
+}
+
+.store-link--link svg {
+  width: auto;
+  height: 100%;
+}
+
+@media (min-width: 17em) {
+  .store-link--link {
+    margin: 0 0.6rem;
+  }
+}

@@ -1,0 +1,6 @@
+@import './modal-types--list.css';
+@import './modal-types--list-item.css';
+
+.modal.modal-types {
+  padding-bottom: calc(var(--bl) * 2.25);
+}

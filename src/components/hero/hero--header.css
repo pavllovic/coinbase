@@ -1,0 +1,18 @@
+.hero--header {
+  max-width: 13.3em;
+  margin-bottom: calc(6 * var(--bl) - var(--text-heading) * 6);
+  font-size: var(--text-heading);
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.hero--header_400 {
+  margin-right: 0.25em;
+  font-weight: 400;
+}
+
+@media (min-width: 24.75em) {
+  .hero--header {
+    margin-bottom: calc(5 * var(--bl) - var(--text-heading) * 4.5);
+  }
+}

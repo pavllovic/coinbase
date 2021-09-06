@@ -1,0 +1,13 @@
+.review--photo {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 1px solid hsl(0, 0%, 85%);
+  border-radius: 50%;
+}
+
+.review--photo img {
+  max-width: 100%;
+  height: auto;
+}

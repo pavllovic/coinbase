@@ -1,0 +1,11 @@
+mixin transfers--item(obj)
+  li(class='transfers--item')
+    div(class='table--tr')
+      span(class='table--td') 
+        <span class='from'>#{obj.from.name}</span>
+        <span>#{obj.to.name}</span>
+    div(class='table--tr')
+      span(class='table--td') 
+        <span class='swap'><span class='mark'>#{obj.from.count}</span> #{obj.from.label}</span>
+        <span><span class='mark'>#{obj.to.count}</span> #{obj.to.label}</span>
+  

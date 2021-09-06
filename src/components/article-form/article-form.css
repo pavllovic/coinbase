@@ -1,0 +1,19 @@
+@import './article-form--header.css';
+@import './article-form--msg.css';
+
+.article-form {
+  max-width: calc(75rem + var(--fluid-h-sm) * 2);
+  padding: 0 var(--fluid-h-sm);
+  margin: calc(var(--bl) * 2) auto;
+  text-align: left;
+}
+
+.article-form .form-comment {
+  margin-top: calc(var(--bl) * 1.5);
+}
+
+@media (min-width: 47.25em) {
+  .article-form {
+    margin: calc(var(--bl) * 3) auto;
+  }
+}

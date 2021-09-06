@@ -1,0 +1,17 @@
+.article-preview p {
+  display: -webkit-box;
+  overflow: hidden;
+  max-width: 85rem;
+  margin: calc(var(--bl) / 2 + (var(--bl) * 1.5 - var(--bl) * 0.7 * 1.5)) auto;
+  -webkit-box-orient: vertical;
+  font-size: var(--text-fluid-md);
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  line-height: calc(var(--bl) * 0.7);
+}
+
+@media (min-width: 51.5em) {
+  .article-preview p {
+    margin: calc(var(--bl) / 2 + (var(--bl) - var(--bl) * 0.7)) auto;
+  }
+}

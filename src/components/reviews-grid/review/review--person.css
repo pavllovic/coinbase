@@ -1,0 +1,4 @@
+.review--person {
+  font-size: var(--text-sm);
+  line-height: 2rem;
+}

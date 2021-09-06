@@ -1,0 +1,6 @@
+mixin modal-controls(back, close)
+  div(class='modal-controls')
+    if back
+      include ./modal-controls--btn/modal-controls--back.pug
+    if close  
+      include ./modal-controls--btn/modal-controls--close.pug

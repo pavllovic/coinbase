@@ -1,0 +1,16 @@
+.footer-contacts li {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.footer-contacts > :last-child {
+  margin-top: auto;
+}
+
+@media (any-pointer: coarse), (max-width: 48.75em) {
+  .footer-contacts li {
+    height: 4rem;
+  }
+}

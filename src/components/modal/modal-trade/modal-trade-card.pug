@@ -1,0 +1,10 @@
+include ../modal-card/modal-card.pug
+
+div(class='modal-wrap' id='modal-trade-card' aria-hidden='true' tabindex='-1')
+  div(class='modal-box modal-box-lg')
+    include ../modal-types/modal-types-card.pug
+    +modal-card('amz', 'Amazon')
+    +modal-card('as', 'App Store & iTunes')
+    +modal-card('stm', 'STEAM')
+    +modal-card('gp', 'Google Play')
+    +modal-card('etc', 'OTHERS')

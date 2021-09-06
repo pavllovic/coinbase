@@ -1,0 +1,21 @@
+.border-gradient {
+  position: relative;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+
+  /* background-color: var(--bg-light); */
+  background-repeat: no-repeat;
+}
+
+.border-gradient::after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -1px;
+  background: var(--border-gradient);
+  border-radius: inherit;
+  content: '';
+}

@@ -1,0 +1,13 @@
+.footer-nav li {
+  display: flex;
+  height: 4rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+@media (min-width: 48.75em) {
+  .footer-nav li {
+    height: auto;
+  }
+}

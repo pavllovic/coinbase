@@ -1,0 +1,48 @@
+.btn-login {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.btn-login--txt {
+  display: none;
+}
+
+.btn-login--svg {
+  fill: url('#login-gradient');
+}
+
+.btn-login .arrow {
+  transition: transform ease-in 0.25s;
+}
+
+.btn-login:hover .arrow {
+  transform: scaleX(0.9) translateX(5px);
+}
+
+@media (min-width: 70em) {
+  .btn-login {
+    width: auto;
+    height: auto;
+    padding: 0;
+    border-radius: calc(var(--bl) * 0.675);
+  }
+
+  .btn-login .btn-login--txt {
+    display: block;
+    margin: 0;
+  }
+
+  .btn-login--svg {
+    display: none;
+  }
+}

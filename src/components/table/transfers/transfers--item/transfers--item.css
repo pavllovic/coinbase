@@ -1,0 +1,19 @@
+.transfers--item {
+  padding: calc(var(--bl) / 2) 0;
+  border-bottom: 1px solid hsl(0, 0%, 73%);
+  margin: 0 auto;
+}
+
+.transfers--item:first-child {
+  padding-top: 0;
+}
+
+.transfers--item:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 60em) {
+  .transfers--item {
+    max-width: 27rem;
+  }
+}

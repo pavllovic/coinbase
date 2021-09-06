@@ -1,0 +1,21 @@
+.social-link li {
+  width: 40px;
+  height: 40px;
+  margin: 0 2px;
+}
+
+.social-link li:first-child {
+  margin-left: 0;
+}
+
+.social-link li:last-child {
+  margin-right: 0;
+}
+
+@media not all and (any-pointer: coarse) {
+  .social-link li {
+    width: 26px;
+    height: 26px;
+    margin: 0 3px;
+  }
+}

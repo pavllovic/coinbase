@@ -1,0 +1,9 @@
+.article-hero--heading {
+  max-width: 93rem;
+  margin: 0 auto;
+  margin-bottom: calc(var(--bl) * 0.5);
+  font-size: var(--text-fluid-xl);
+  font-weight: 700;
+  line-height: calc(var(--bl) * 1.125);
+  text-transform: uppercase;
+}

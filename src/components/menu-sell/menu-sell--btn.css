@@ -1,0 +1,43 @@
+[aria-controls='sell-actions'] {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  border: none;
+  margin-left: auto;
+  background-color: transparent;
+  border-radius: 5px;
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+[aria-controls='sell-actions'] span:last-child {
+  display: none;
+  margin-left: 0.5ch;
+}
+
+[aria-controls='sell-actions']::after {
+  display: block;
+  box-sizing: border-box;
+  border-style: solid;
+  border-top-width: 0.6rem;
+  border-top-color: var(--color-text);
+  border-right-width: 0.4rem;
+  border-right-color: transparent;
+  border-bottom-width: 0;
+  border-left-width: 0.4rem;
+  border-left-color: transparent;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5ch;
+  border-radius: 0.2rem;
+  content: '';
+}
+
+@media (min-width: 35em) {
+  [aria-controls='sell-actions'] span:last-child {
+    display: block;
+  }
+}

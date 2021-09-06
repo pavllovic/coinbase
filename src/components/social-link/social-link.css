@@ -1,0 +1,8 @@
+@import './social-link--item.css';
+@import './social-link--link.css';
+@import './social-link--icon.css';
+
+.social-link {
+  display: flex;
+  cursor: pointer;
+}

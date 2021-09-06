@@ -1,0 +1,13 @@
+form(class='form-comment' id='form-comment')
+  div(class='form--field')
+    input(id='name' type='text' inputmode='text' placeholder=' ' required name='name')
+    label(for='name') Name *
+    div(class='error' role='status' aria-live='polite' data-error='name')
+  div(class='form--field')
+    input(id='email' type='text' inputmode='email' placeholder=' ' required name='email')
+    label(for='email') Email *
+    div(class='error' role='status' aria-live='polite' data-error='email')
+  div(class='form--field form--field-textarea')
+    textarea(id='comment' placeholder=' ' name='message')
+    label(for='comment') Your Comment
+  button(class='btn' type='submit') publish

@@ -1,0 +1,38 @@
+.combobox--item {
+  position: relative;
+  overflow: hidden;
+}
+
+.combobox--item::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(0, 0%, 90%);
+  border-radius: 100px;
+  content: '';
+  opacity: 0;
+  transform: scale(0, 0);
+  transform-origin: center center;
+  transition-duration: 0.25s, 0.25s;
+  transition-property: opacity, transform;
+  transition-timing-function: ease-in, ease-in;
+}
+
+.combobox--item:hover::before,
+.combobox--item.is-focus::before {
+  opacity: 1;
+  transform: scale(1.2, 1.2);
+}
+
+.combobox--options:hover .combobox--item.is-focus::before {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+
+.combobox--options:hover .combobox--item.is-focus:hover::before {
+  opacity: 1;
+  transform: scale(1.2, 1.2);
+}

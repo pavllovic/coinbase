@@ -1,0 +1,29 @@
+.subheading {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: calc(var(--bl) / 2);
+  color: var(--color-main);
+  font-size: var(--text-subheading);
+  font-weight: 700;
+  line-height: var(--bl);
+}
+
+.subheading::after {
+  position: absolute;
+  bottom: calc(var(--bl) / -2.5);
+  width: 1.78em;
+  height: calc(var(--text-subheading) / 4);
+  background-color: var(--color-main);
+  border-radius: 0.4rem;
+  content: '';
+}
+
+@supports (background-clip: text) {
+  .subheading span {
+    background: var(--text-gradient);
+    background-clip: text;
+    color: transparent;
+  }
+}

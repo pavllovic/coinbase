@@ -1,0 +1,27 @@
+.nav .menu--item {
+  position: relative;
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 max(10px, min(calc(10px + (100vw - 1115px) * 0.088), 25px));
+}
+
+@media (min-width: 62em) {
+  .nav .menu--item::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 2.2rem;
+    height: calc(var(--bl) * 0.075);
+    background-color: var(--color-main);
+    border-radius: calc(var(--bl) * 0.0875);
+    content: '';
+    transform: scaleX(0);
+    transition: transform ease-in 0.25s;
+  }
+
+  .nav .menu--item:hover::after {
+    transform: scaleX(1);
+  }
+}

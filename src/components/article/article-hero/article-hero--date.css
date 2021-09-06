@@ -1,0 +1,11 @@
+.article-hero--date {
+  font-size: var(--text-xs);
+  line-height: calc(var(--bl) * 0.5);
+  text-transform: uppercase;
+}
+
+@media (min-width: 60em) {
+  .article-hero--date {
+    font-size: var(--text-xss);
+  }
+}

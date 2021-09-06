@@ -1,0 +1,10 @@
+.review--msg {
+  font-size: var(--text-sm);
+  line-height: 2rem;
+}
+
+@media (min-width: 60em) {
+  .review--msg {
+    font-size: var(--text-xs);
+  }
+}

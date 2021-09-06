@@ -1,0 +1,16 @@
+.history-graph--date {
+  padding: calc((var(--bl) - 3rem) / 2) 0;
+  margin-bottom: calc(var(--bl) / 2);
+  color: var(--color-main);
+  font-size: var(--text-title);
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+@supports (background-clip: text) {
+  .history-graph--date {
+    background: hsla(331, 65%, 64%, 1);
+    background-clip: text;
+    color: transparent;
+  }
+}

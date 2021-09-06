@@ -1,0 +1,38 @@
+@import './common.css';
+@import '../components/gmap/gmap.css';
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--fluid-h-sm);
+  padding-top: var(--bl);
+}
+
+@media (min-width: 60em) {
+  .box {
+    padding-top: 0;
+  }
+}
+
+.box > p {
+  margin-bottom: calc(var(--bl) * 1.4);
+  font-size: var(--text-fluid-md);
+  line-height: 1.5;
+}
+
+.form-comment {
+  width: calc(100% + 20px);
+  max-width: calc(73rem + 20px);
+}
+
+.gmap {
+  margin: 0 auto;
+  margin-top: calc(var(--bl) * 2.25);
+}
+
+@media (min-width: 42em) {
+  .gmap {
+    margin: calc(var(--bl) * 2.25) auto;
+  }
+}

@@ -1,0 +1,44 @@
+@import './table--th.css';
+@import './table--tr.css';
+@import './table--td.css';
+@import './transfers/transfers.css';
+
+.table {
+  display: flex;
+  max-width: 56rem;
+  flex-direction: column;
+  padding: 0 10px;
+  margin: 0 auto;
+  background-color: var(--bg-light);
+  border-radius: 30px;
+}
+
+.table-col {
+  flex-basis: calc(100% / 3);
+  padding-right: var(--fluid-h-sm);
+  padding-left: var(--fluid-h-sm);
+  margin-bottom: calc(var(--bl) * 1.5);
+}
+
+.table-rates,
+.table-reserves {
+  margin-bottom: calc(var(--bl) * 2);
+}
+
+@media (min-width: 60em) {
+  .table {
+    max-width: 116rem;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .table-col {
+    padding: 0 20px;
+    margin-bottom: var(--bl);
+  }
+
+  .table-col .table--th {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+}

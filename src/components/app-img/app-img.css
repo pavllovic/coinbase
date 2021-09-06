@@ -1,0 +1,43 @@
+@import './app-img--btn.css';
+@import './app-img--header.css';
+@import './app-img--msg.css';
+
+.app-img {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: calc(7.6vw + var(--bl) / 2);
+  padding-right: var(--fluid-h-sm);
+  padding-left: var(--fluid-h-sm);
+  background:
+    url("data:image/svg+xml,%3Csvg width='92' height='77' viewBox='0 0 92 77' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.5'%3E%3Cpath d='M52.8445 76.8648C31.6188 76.8648 -7.62939e-05 71.8439 -7.62939e-05 50.6183C-7.62939e-05 29.3927 31.6188 0 52.8445 0C74.0701 0 91.2769 17.2068 91.2769 38.4324C91.2769 59.658 74.0701 76.8648 52.8445 76.8648Z' fill='url(%23paint0_linear)'/%3E%3Cmask id='mask0' mask-type='alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='92' height='77'%3E%3Cpath d='M52.8445 76.8648C31.6188 76.8648 -7.62939e-05 71.8439 -7.62939e-05 50.6183C-7.62939e-05 29.3927 31.6188 0 52.8445 0C74.0701 0 91.2769 17.2068 91.2769 38.4324C91.2769 59.658 74.0701 76.8648 52.8445 76.8648Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0)'%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='41.0745' y1='-12.0991' x2='37.4216' y2='124.105' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FD749B'/%3E%3Cstop offset='1' stop-color='%23281AC8'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"),
+    linear-gradient(to bottom, transparent 0%, transparent 69%, var(--bg-light) 69%),
+    var(--bg-gradient-md);
+  background-position:
+    min(calc(50% - 100px), max(calc(50% - (((100vw - 200px) / (1500 - 200)) * (480 - 100) + 100px)), calc(50% - 480px))) 55%,
+    0 0,
+    0 0;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  pointer-events: none;
+  user-select: none;
+}
+
+.app-img::before {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 7.6vw;
+  background-image: url("data:image/svg+xml,%3Csvg width='1641.14' height='125' viewbox='0 0 1641.14 125' fill='%23fff' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-0.000244141 75.4237C-0.000244141 75.4237 6.81226 43.5609 283.401 62.2234C559.99 80.8859 782.079 184.212 1127.48 75.4237C1472.87 -33.3651 1641.14 13.5188 1641.14 13.5188V-1.87833e-06H-0.000488281'/%3E%3C/svg%3E");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 103% 7.6vw;
+  content: '';
+}
+
+.app-img svg {
+  max-width: 100%;
+  height: auto;
+  margin: calc(var(--bl) / 4);
+}

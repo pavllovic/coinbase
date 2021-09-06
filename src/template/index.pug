@@ -1,0 +1,117 @@
+extends ./layout/base.pug
+
+block preload
+  link(rel='preload' href=require('Images/hero/index-1098w.webp').default as='image' 
+      media='(min-width: 512px) and (-webkit-min-device-pixel-ratio: 2)')
+  link(rel='preload' href=require('Images/hero/index-549w.webp').default as='image' 
+      media='(min-width: 512px) and (max-width: 1071px) and (-webkit-max-device-pixel-ratio: 1.5),' +
+            '(min-width: 1124px) and (-webkit-max-device-pixel-ratio: 1.5)')
+  link(rel='preload' href=require('Images/hero/index-414w.webp').default as='image' 
+      media='(min-width: 1072px) and (max-width: 1123px) and (-webkit-max-device-pixel-ratio: 1.5)')
+  //- link(rel='preload' href=require('Fonts/poppins-regular.woff2').default as='font' type='font/woff2')
+
+block content
+  include ../components/header/header.pug
+  main
+    section(class='hero-wrap')
+      div(class='hero hero-index')
+        div(class='hero-txt')
+          h1(class='hero--header') 
+            span(class='hero--header_400') We provide easy solution to exchange your
+            span Bitcoin/<wbr>GiftCard for money
+          p(class='hero--msg') CoinBase is a platform for trading your bitcoin and giftcard at the best rate, why not give us a trial.
+          div(class='btn-wrap')
+            button(class='btn') 
+              span get started
+        picture
+          source(srcset=`${require('Images/hero/index-414w.webp').default} 414w,
+                         ${require('Images/hero/index-549w.webp').default} 549w,
+                         ${require('Images/hero/index-1098w.webp').default} 1098w` 
+                sizes='(min-width: 512px) and (max-width: 1071px) 549px,' + 
+                      '(min-width: 1072px) and (max-width: 1123px) 414px,' + 
+                      '(min-width: 1124px) 549px'
+                media='(min-width: 512px)' 
+                type='image/webp')
+          source(srcset=`${require('Images/hero/index-414w.png').default} 414w, 
+                         ${require('Images/hero/index-549w.png').default} 549w,
+                         ${require('Images/hero/index-1098w.png').default} 1098w` 
+                sizes='(min-width: 512px) and (max-width: 1071px) 549px,' +
+                      '(min-width: 1072px) and (max-width: 1123px) 414px,' +
+                      '(min-width: 1124px) 549px'
+                media='(min-width: 512px)'
+                type='image/png')
+          img(class='hero--img' src=require('Images/hero/index-549w.png').default width='549' height='496' alt='text img' loading='lazy')
+    section(class='box box-info')
+      picture(class='box-info--img')
+        source(srcset=`${require('Images/promo/1-414w.webp').default} 414w, 
+                       ${require('Images/promo/1-541w.webp').default} 541w,
+                       ${require('Images/promo/1-1082w.webp').default} 1082w`
+              sizes='(min-width: 488px) 541px, 414px' 
+              type='image/webp')
+        source(srcset=`${require('Images/promo/1-414w.png').default} 414w,
+                       ${require('Images/promo/1-541w.png').default} 541w,
+                       ${require('Images/promo/1-1082w.png').default} 1082w`
+              sizes='(min-width: 488px) 541px, 414px' 
+              type='image/png')
+        img(src=require('Images/promo/1-541w.png').default width='541' height='393' alt='text img' loading='lazy')
+      div(class='box-info--txt')
+        h2(class='box-info--header subheading') 
+          span Welcome to CoinBase
+        p(class='box-info--msg text-md')
+          include ../text/index/info--msg.md
+        button(class='btn') discover
+    section(class='box box-table')
+      h2(class='visually-hidden') Table prices and transactions
+      include ../components/table/table.pug
+    section(class='box box-info box-info_invers')
+      picture(class='box-info--img')
+          source(srcset=`${require('Images/promo/2-414w.webp').default} 414w, 
+                        ${require('Images/promo/2-514w.webp').default} 514w,
+                        ${require('Images/promo/2-1028w.webp').default} 1028w`
+                sizes='(min-width: 488px) 514px, 414px'  
+                type='image/webp')
+          source(srcset=`${require('Images/promo/2-414w.png').default} 414w, 
+                        ${require('Images/promo/2-514w.png').default} 514w,
+                        ${require('Images/promo/2-1028w.png').default} 1028w`
+                sizes='(min-width: 488px) 514px, 414px'  
+                type='image/png')
+          img(src=require('Images/promo/2-514w.png').default width='514' height='413' alt='text img' loading='lazy')
+      div(class='box-info--txt')
+        h2(class='box-info--header subheading') 
+          span Great experience<br/>with CoinBase
+        p(class='box-info--msg text-md')
+          include ../text/index/info--msg-2.md
+        button(class='btn') discover
+    section(class='box-trade-wrap')
+      include ../components/btn/btn-trade/btn-trade.pug
+      div(class='box-trade')
+        h2(class='box-trade--header subheading') 
+          span Trade from anywhere
+        +btn-trade('bitcoin', 'coin')
+        +btn-trade('gift card', 'card')
+    section(class='box box-blog')
+      h2(class='subheading') 
+        span Our blog
+      p(class='text-md') Get to know the latest stuff via our blog post.
+      include ../components/article-preview-list/article-preview-list.pug
+    section(class='box box-reviews')
+      h2(class='box-reviews--header subheading') 10,000 Satisfied clients<br/> around the world
+      p(class='box-reviews--msg text-md') Yeah! we’re proud with numbers. We’ve helped thousands of clients all around the world with our bespoke service. Hover ontop of them pic to view their testimonials.
+      include ../components/reviews-grid/reviews-grid.pug 
+    section(class='box box-app')
+      h2(class='subheading') 
+        span Download our app
+      p(class='box-app--msg text-md') Discover exclusive deals and discounts with our mobile experience.
+      include ../components/store-link/store-link.pug
+      include ../components/app-img/app-img.pug
+  section(class='box box-subscribe')
+    h2(class='subheading') 
+      span Subscribe our newsletter
+    p(class='box-subscribe--msg text-md') Subscribe to our newsletter for daily/weekly update of our products and services.
+    include ../components/form/form-subscribe/form-subscribe.pug
+  include ../components/footer/footer.pug
+  include ../components/logo/svg/spriteLogoIcon.svg
+  include ../images/icon/card/spriteCardIcon.svg
+  include ../components/modal/modal-auth/modal-auth.pug
+  include ../components/modal/modal-trade/modal-trade-coin.pug
+  include ../components/modal/modal-trade/modal-trade-card.pug

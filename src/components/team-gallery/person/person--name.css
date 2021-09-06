@@ -1,0 +1,5 @@
+.person--name {
+  color: var(--color-text-light);
+  font-size: var(--text-xs);
+  line-height: 2rem;
+}

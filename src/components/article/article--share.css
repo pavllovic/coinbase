@@ -1,0 +1,8 @@
+@import '../share-link/share-link.css';
+@import './article--share-label.css';
+
+.article--share {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

@@ -1,0 +1,9 @@
+@import './footer-contacts-wrap.css';
+@import './footer-contacts--item.css';
+@import './footer-contacts--link.css';
+
+.footer-contacts {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}

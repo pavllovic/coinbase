@@ -1,0 +1,95 @@
+.table--td {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: calc((var(--bl) - 2rem) / 2) 0;
+  font-size: var(--text-sm);
+  line-height: 2rem;
+}
+
+.table--td-100 {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (min-width: 19em) {
+  .table--td {
+    justify-content: flex-start;
+  }
+
+  .table--td:first-child {
+    margin-right: 20px;
+  }
+
+  .table--td:only-child {
+    margin-right: 0;
+  }
+
+  .table--td-100 {
+    justify-content: flex-end;
+  }
+}
+
+.table--td-btc,
+.table--td-eth,
+.table--td-bnk {
+  padding-left: calc(2.8rem + 1.4rem);
+}
+
+.table--td-btc::before,
+.table--td-eth::before,
+.table--td-bnk::before {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+}
+
+.table--td-btc::before {
+  background-image: url('Images/icon/btc.svg');
+}
+
+.table--td-eth::before {
+  background-image: url('Images/icon/eth.svg');
+}
+
+.table--td-bnk::before {
+  background-image: url('Images/icon/bank.svg');
+}
+
+.table--td .mark {
+  font-weight: 700;
+}
+
+.table--td .swap,
+.table--td .from {
+  display: inline-flex;
+  align-items: center;
+}
+
+.table--td .swap::after,
+.table--td .from::after {
+  display: inline-block;
+  width: 1.4rem;
+  height: 2rem;
+  margin: 0 1.6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+}
+
+.table--td .swap::after {
+  background-image: url('Images/icon/arrows.svg');
+}
+
+.table--td .from::after {
+  background-image: url('Images/icon/arrow.svg');
+}

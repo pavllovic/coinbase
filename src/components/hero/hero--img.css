@@ -1,0 +1,59 @@
+.hero picture,
+.hero.hero-index picture {
+  position: absolute;
+  right: 0;
+  display: none;
+  width: 100%;
+  max-width: 549px;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.hero--img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+@media (min-width: 32em) {
+  .hero picture,
+  .hero.hero-index picture {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .hero.hero-index picture {
+    right: -10%;
+  }
+
+  .hero.hero-contact picture,
+  .hero.hero-about picture {
+    padding-top: calc(var(--bl));
+    padding-left: calc(var(--bl));
+  }
+}
+
+@media (min-width: 60em) {
+  .hero picture {
+    position: static;
+    min-width: 0;
+    margin-left: auto;
+    object-fit: contain;
+    opacity: 1;
+  }
+
+  .hero.hero-index picture {
+    position: absolute;
+    right: -5%;
+  }
+}
+
+@media (min-width: 67em) {
+  .hero.hero-index picture {
+    position: static;
+    opacity: 1;
+    transform: translate(calc(var(--bl) / 2), calc(var(--bl) / 3));
+  }
+}

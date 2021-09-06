@@ -1,0 +1,12 @@
+mixin article(meta)
+  include ./article-hero/article-hero.pug
+  include ./article--tags/article--tags.pug 
+  article(class='article')
+    +article-hero(meta)
+    include ./article--txt/article--txt.pug
+    footer(class='article--footer')
+      +article-tags(meta.tags)
+      div(class='article--share') 
+        span(class='article--share-label') Share with
+        include ../share-link/share-link.pug
+      include ./article--sibling/article--sibling.pug

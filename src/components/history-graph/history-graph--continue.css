@@ -1,0 +1,18 @@
+.history-graph--continue {
+  margin-top: calc(var(--bl) / 2);
+  font-family: var(--font-bold);
+  font-size: var(--text-xs);
+  font-weight: bold;
+  line-height: calc(var(--bl) / 2);
+  text-align: right;
+  text-transform: uppercase;
+}
+
+@media (min-width: 60em) {
+  @supports (display: grid) {
+    .history-graph--continue {
+      grid-column: 1/4;
+      text-align: center;
+    }
+  }
+}

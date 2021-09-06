@@ -1,0 +1,20 @@
+.article--sibling-name {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-bottom: calc(var(--bl) * 0.5);
+  -webkit-box-orient: vertical;
+  color: var(--color-main);
+  font-size: var(--text-fluid-lg);
+  font-weight: 700;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  line-height: 1.39;
+}
+
+@supports (background-clip: text) {
+  .article--sibling-name {
+    background: linear-gradient(178deg, var(--color-main) -10%, var(--color-second) 160%);
+    background-clip: text;
+    color: transparent;
+  }
+}

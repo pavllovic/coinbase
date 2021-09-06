@@ -1,0 +1,31 @@
+@import './form--input.css';
+@import './form--field.css';
+@import './form--textarea.css';
+@import './form--link.css';
+@import './form--label.css';
+@import '../combobox/combobox.css';
+@import './form--error.css';
+@import './form-subscribe/form-subscribe.css';
+@import './form-comment/form-comment.css';
+@import './form-popup/form-popup.css';
+
+.form {
+  display: flex;
+  width: 100%;
+  max-width: 34.8rem;
+  flex-direction: column;
+}
+
+.form .input-bg {
+  max-width: 17.5rem;
+  align-self: center;
+}
+
+.form .form--field:last-of-type {
+  margin-bottom: 0;
+}
+
+.form [type='submit'] {
+  align-self: center;
+  margin-top: var(--bl);
+}

@@ -1,0 +1,10 @@
+//- HtmlWebpackPlugin pass prop prev, next.
+div(class='article--sibling')
+  if prev
+    a(class='article--sibling-link' href=`article-${prev.number}.html`)
+      span(class='article--sibling-type') Prev Post
+      p(class='article--sibling-name') #{prev.title}
+  if next
+    a(class='article--sibling-link' href=`article-${next.number}.html`)
+      span(class='article--sibling-type') Next Post
+      p(class='article--sibling-name') #{next.title}

@@ -1,0 +1,11 @@
+@import './article-preview--header.css';
+@import './article-preview--meta.css';
+@import './article-preview--link.css';
+@import './article-preview--img.css';
+@import './article-preview--msg.css';
+@import './article-preview--txt.css';
+
+.article-preview {
+  max-width: 117rem;
+  text-align: center;
+}

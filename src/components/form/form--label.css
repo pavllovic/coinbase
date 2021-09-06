@@ -1,0 +1,25 @@
+label {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 1em;
+  padding: 0 5px;
+  background-color: var(--bg-light);
+  font-size: var(--text-sm);
+  line-height: calc(var(--bl) / 2);
+  pointer-events: none;
+  text-transform: capitalize;
+  transform: translateY(-50%);
+  transition: transform ease-out 0.25s;
+}
+
+input:placeholder-shown ~ label,
+textarea:placeholder-shown ~ label {
+  transform: translateY(calc(var(--bl) / 2));
+}
+
+input:focus ~ label,
+textarea:focus ~ label,
+.combobox.is-active label {
+  transform: translateY(-50%);
+}

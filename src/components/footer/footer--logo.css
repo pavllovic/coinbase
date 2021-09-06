@@ -1,0 +1,33 @@
+.footer--logo {
+  display: block;
+  margin-bottom: calc(var(--bl) * 0.75);
+}
+
+.footer--logo .logo--icon {
+  width: 3.1rem;
+  height: 2.5rem;
+}
+
+.footer--logo .logo--text {
+  width: 7.6rem;
+  height: 1.4rem;
+}
+
+.footer--logo .logo--icon,
+.footer--logo .logo--text {
+  fill: var(--color-text-light);
+  stroke: var(--color-text-light);
+}
+
+@media (min-width: 23em) {
+  .footer--logo {
+    margin-top: 0.4rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .footer--logo {
+    height: 2.5rem;
+    margin-top: -0.4rem;
+  }
+}

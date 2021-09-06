@@ -1,0 +1,20 @@
+mixin card(type, name)
+  span(class=`card card-${type}`)
+    span(class='card--icon' aria-hidden='true')
+      svg(aria-hidden='true' focusable='false')
+        case type
+          when 'btc'
+            use(href='#btc' height='45' y='5')
+          when 'eth'
+            use(href='#eth' height='45' y='5')
+          when 'amz'
+            use(href='#amz' height='55')
+          when 'etc'
+            use(href='#etc' height='33' y='11')
+          when 'stm'
+            use(href='#stm' height='48.5' y='3.25')
+          when 'as'
+            use(href='#as' height='55')
+          when 'gp'
+            use(href='#gp' height='51' y='2')
+    span(class='card--name') #{name}

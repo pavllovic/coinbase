@@ -1,0 +1,12 @@
+.modal--form-note {
+  max-width: 34.8rem;
+  margin-bottom: calc(var(--bl) * 1.125);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+@media (min-width: 60em) {
+  .modal--form-note {
+    font-size: var(--text-xs);
+  }
+}

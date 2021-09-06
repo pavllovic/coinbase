@@ -1,0 +1,31 @@
+.article-preview--header {
+  display: -webkit-box;
+  overflow: hidden;
+  max-width: 823rem;
+  max-height: calc(var(--bl) * 2);
+  margin-bottom: calc(var(--bl) * 0.375);
+  -webkit-box-orient: vertical;
+  color: var(--color-second);
+  font-size: var(--text-fluid-xl); /* 32px */
+  font-weight: 700;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  line-height: var(--bl);
+  text-transform: uppercase;
+}
+
+@supports (background-clip: text) {
+  .article-preview--header {
+    background: linear-gradient(to bottom, var(--color-main) -10%, var(--color-second) 160%);
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@media (min-width: 20em) {
+  .article-preview--header {
+    max-height: var(--bl);
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+  }
+}

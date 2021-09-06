@@ -1,0 +1,22 @@
+@import './transfers--item/transfers--item.css';
+
+.transfers {
+  max-height: calc(var(--bl) * 6);
+  padding-right: var(--bl);
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  scrollbar-color: var(--color-main) hsl(0, 0%, 90%, 1);
+  scrollbar-width: thin;
+}
+
+.transfers::-webkit-scrollbar {
+  width: 3px;
+}
+
+.transfers::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 90%, 1);
+}
+
+.transfers::-webkit-scrollbar-thumb {
+  background-color: var(--color-main);
+}

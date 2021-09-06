@@ -1,0 +1,14 @@
+mixin combobox(options, id, name, label)
+  div(class='combobox')
+    input(class='visually-hidden' name=`${name}` aria-hidden='true' tabindex='-1' placeholder=' ' required)
+    div(class='combobox--input' tabindex='0' role='combobox'
+        aria-controls=`${id}-options` 
+        aria-haspopup='listbox' 
+        aria-expanded='false' 
+        aria-labelledby=`${id}` 
+        aria-autocomplete='none')
+    div(class='combobox--options' id=`${id}-options` role='listbox')
+      each option in options
+        div(class='combobox--item' id=`${id}-${option}` role='option' aria-selected='false') #{option}
+    if label
+      label(id=`${id}`) #{label}

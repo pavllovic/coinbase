@@ -1,0 +1,54 @@
+@import '../../border-gradient/border-gradient.css';
+
+.btn-trade {
+  display: flex;
+  width: calc(var(--bl) * 6.5);
+  height: calc(var(--bl) * 5.5);
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: calc(var(--bl) / 2);
+  background-color: var(--bg-light);
+  border-radius: 15px;
+  box-shadow: inset 0 0 0 0 hsl(0, 0%, 0%, 0.2), 0 0 0 0 hsl(0, 0%, 0%, 0.07);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--text-fluid-md);
+  font-weight: 700;
+  line-height: 2rem;
+  text-transform: capitalize;
+  transition: box-shadow ease-in 0.15s;
+}
+
+@media (min-width: 60em) {
+  .btn-trade {
+    margin: calc(var(--bl) / 2) calc(var(--bl) / 1.5);
+  }
+}
+
+.btn-trade:hover {
+  box-shadow: inset 0 0 0 0 hsl(0, 0%, 0%, 0.2), 0 0 31px 0 hsl(0, 0%, 0%, 0.07);
+}
+
+.btn-trade:active {
+  box-shadow: inset 0 0 10px 0 hsl(0, 0%, 0%, 0.2), 0 0 0 0 hsl(0, 0%, 0%, 0.07);
+}
+
+.btn-trade span {
+  padding: 0 10px;
+  margin-bottom: calc(var(--bl) * 1.25);
+}
+
+.btn-trade[data-modal='coin'] {
+  background-image: url('Images/icon/btc.svg');
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  background-size: calc(var(--bl) * 1.5) auto;
+}
+
+.btn-trade[data-modal='card'] {
+  background-image: url('Images/icon/card.svg');
+  background-position: center 27.7%;
+  background-repeat: no-repeat;
+  background-size: calc(var(--bl) * 1.75) auto;
+}

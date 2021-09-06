@@ -1,0 +1,16 @@
+.form--link {
+  align-self: flex-end;
+  margin-top: calc(var(--bl) * 0.5);
+  border-radius: 5px;
+  color: inherit;
+  cursor: pointer;
+  font-size: var(--text-sm);
+  line-height: 2rem;
+  text-decoration: none;
+}
+
+@media (min-width: 60em) {
+  .form--link {
+    font-size: var(--text-xs);
+  }
+}

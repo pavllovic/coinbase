@@ -1,0 +1,92 @@
+@import './card--name.css';
+@import './card--icon.css';
+
+.card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 31rem;
+  height: calc(var(--bl) * 5.35);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 10px;
+  border: none;
+  border-radius: 15px;
+}
+
+.card:only-child {
+  margin-bottom: 0;
+}
+
+.card-eth {
+  background: linear-gradient(145deg, hsl(187, 100%, 50%) 9.5%, hsl(223, 100%, 50%) 107.5%);
+  background-position: center;
+}
+
+.card-btc {
+  background: radial-gradient(100% 100% at 50% 0%, hsl(29, 98%, 50%, 1) 10%, hsl(0, 74%, 57%, 1) 100%);
+  background-position: center;
+}
+
+.card-as {
+  background: linear-gradient(145deg, hsl(187, 100%, 50%) 9.5%, hsl(223, 100%, 50%) 107.5%);
+  background-position: center;
+}
+
+.card-amz {
+  background: hsl(31, 100%, 4%, 1);
+  background-position: center;
+}
+
+.card-stm {
+  background: hsl(0, 0%, 0%, 1);
+  background-position: 10px, center;
+}
+
+.card-gp {
+  background: linear-gradient(145deg, hsl(158, 96%, 80%) 19.5%, hsl(209, 69%, 38%) 107.5%);
+  background-position: center;
+}
+
+.card-etc {
+  background: var(--bg-gradient);
+  background-position: center;
+}
+
+@media (min-width: 13.125em) {
+  .card-as {
+    background: url('Images/icon/card/as.svg'), linear-gradient(145deg, hsl(187, 100%, 50%) 9.5%, hsl(223, 100%, 50%) 107.5%);
+    background-position: calc(100% - 10px) 10px, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1rem 0.9rem, 100%;
+  }
+
+  .card-amz {
+    background: url('Images/icon/card/amz-full.svg'), hsl(31, 100%, 4%, 1);
+    background-position: calc(100% - 10px) 10px, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 2.2rem 0.7rem, 100%;
+  }
+
+  .card-stm {
+    background: url('Images/icon/card/stm.svg'), hsl(0, 0%, 0%, 1);
+    background-position: calc(100% - 12px) 10px, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 0.9rem 0.9rem, 100%;
+  }
+
+  .card-gp {
+    background: url('Images/icon/card/gp.svg'), linear-gradient(145deg, hsl(158, 96%, 80%) 19.5%, hsl(209, 69%, 38%) 107.5%);
+    background-position: calc(100% - 10px) 10px, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 0.9rem 1.1rem, 100%;
+  }
+
+  .card-etc {
+    background: url('Images/icon/card/etc.svg'), var(--btn-gradient);
+    background-position: calc(100% - 10px) 10px, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1.4rem 0.8rem, 100%;
+  }
+}

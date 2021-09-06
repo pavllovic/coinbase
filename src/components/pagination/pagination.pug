@@ -1,0 +1,11 @@
+include ./pagination--item/pagination--item-current.pug
+include ./pagination--item/pagination--item-link.pug
+include ./pagination--item/pagination--item-next.pug
+include ./pagination--item/pagination--item-more.pug
+
+ul(class='pagination' role='navigation' aria-label='Pagination')
+  +pagination--item-current('01')
+  +pagination--item-link('02')
+  +pagination--item-link('03')
+  +pagination--item-more
+  +pagination--item-next

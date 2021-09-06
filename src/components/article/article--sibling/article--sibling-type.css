@@ -1,0 +1,12 @@
+.article--sibling-type {
+  display: block;
+  color: hsl(0, 0%, 60%);
+  font-size: var(--text-sm);
+  line-height: calc(var(--bl) * 0.5);
+}
+
+@media (min-width: 60em) {
+  .article--sibling-type {
+    font-size: var(--text-xs);
+  }
+}

@@ -1,0 +1,53 @@
+@import './header--logo.css';
+
+.header-wrap {
+  background-color: var(--bg-light);
+}
+
+.header {
+  display: flex;
+  max-width: 150rem;
+  min-height: calc(var(--bl) * 3);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 var(--fluid-h-sm);
+  padding: calc(var(--bl) / 2) var(--fluid-h-sm);
+  margin: 0 auto;
+}
+
+.header .header--logo {
+  margin-right: auto;
+}
+
+.header .menu-sell {
+  width: auto;
+  order: 0;
+  margin: 0 max(10px, min(calc(10px + (100vw - 1115px) * 0.088), 25px));
+}
+
+.header .nav {
+  order: 1;
+  margin-left: 10px;
+}
+
+.header .btn-login {
+  order: 0;
+}
+
+@media (min-width: 62em) {
+  .header .nav {
+    order: 0;
+    margin: 0 max(20px, min(calc(20px + (100vw - 1115px) * 0.088), 35px));
+  }
+
+  .header .btn-login {
+    margin-right: -6px;
+  }
+}
+
+@media (min-width: 70em) {
+  .header .btn-login {
+    margin-right: 0;
+  }
+}

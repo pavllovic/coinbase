@@ -1,0 +1,7 @@
+mixin form-popup(popup)
+  div(class='form-popup' aria-hidden='true' data-form-popup=`${popup.type}` tabindex='-1')
+    div(class='form-popup-box')
+      p(class='form-popup--txt' data-popup-msg)
+      div(class='form-popup--controls')
+        each item in popup.controls
+          button(class='btn' type='button' data-popup-control=`${item.type}` disabled) #{item.txt}

@@ -1,0 +1,12 @@
+textarea {
+  height: calc(var(--bl) * 5);
+  padding: calc(var(--bl) * 0.5) 1ch;
+  border: 1px solid hsl(0, 0%, 82%);
+  background-color: var(--bg-light);
+  border-radius: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  resize: none;
+}

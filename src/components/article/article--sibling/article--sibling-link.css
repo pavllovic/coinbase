@@ -1,0 +1,32 @@
+.article--sibling-link {
+  display: flex;
+  max-width: 21rem;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+/* prev article link */
+.article--sibling-link:first-child {
+  padding-right: 10px;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* next article link */
+.article--sibling-link:last-child {
+  padding-left: 10px;
+  margin-left: auto;
+  text-align: right;
+}
+
+.article--sibling-link:only-child {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: left;
+}

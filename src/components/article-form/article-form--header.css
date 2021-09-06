@@ -1,0 +1,5 @@
+.article-form--header {
+  font-size: var(--text-title);
+  font-weight: 700;
+  line-height: var(--bl);
+}

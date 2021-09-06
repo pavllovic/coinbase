@@ -1,0 +1,7 @@
+.person--post {
+  color: var(--color-text-light);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  line-height: 2rem;
+  text-transform: uppercase;
+}

@@ -1,0 +1,81 @@
+.nav--btn {
+  position: relative;
+  z-index: 7;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform ease-in 0.25s;
+}
+
+.nav--btn span {
+  width: 100%;
+  height: 2px;
+  margin: 2px 0;
+  background: var(--btn-gradient);
+  border-radius: 2px;
+  transition: transform ease-in 0.25s;
+}
+
+/* btn background when menu closed */
+.nav--btn[aria-expanded='false'] span {
+  transform: scaleX(0.55);
+}
+
+.nav--btn[aria-expanded='false'] span:nth-child(2) {
+  transform: scaleX(0.4);
+}
+
+/* ------------------------------------------- */
+
+
+/* btn background when menu opened */
+.nav--btn[aria-expanded='true'] {
+  transform: rotateZ(45deg);
+}
+
+.nav--btn[aria-expanded='true'] span:nth-child(2) {
+  transform: scaleX(0);
+}
+
+.nav--btn[aria-expanded='true'] span:nth-child(1) {
+  transform: translateY(6px) scaleX(0.55);
+}
+
+.nav--btn[aria-expanded='true'] span:nth-child(3) {
+  transform: translateY(-6px) scaleY(0.55) rotateZ(90deg);
+}
+
+/* ------------------------------------------- */
+
+.nav--btn[aria-expanded='false']:hover span {
+  transform: scaleX(0.4);
+}
+
+.nav--btn[aria-expanded='false']:hover span:nth-child(2) {
+  transform: scaleX(0.55);
+}
+
+.nav--btn[aria-expanded='true']:hover span:nth-child(1) {
+  transform: translateY(6px) scaleX(0.4);
+}
+
+.nav--btn[aria-expanded='true']:hover span:nth-child(3) {
+  transform: translateY(-6px) scaleY(0.4) rotateZ(90deg);
+}
+
+
+
+/* ------------------------------------------- */
+
+@media (min-width: 62em) {
+  .nav--btn {
+    display: none;
+  }
+}

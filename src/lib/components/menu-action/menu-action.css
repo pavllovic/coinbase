@@ -1,0 +1,26 @@
+.menu-action {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menu-action [role='menu'] {
+  position: absolute;
+  left: 50%;
+  display: none;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.menu-action.is-active [role='menu'] {
+  display: block;
+}
+
+.menu-action [role='menuitem'].is-focus {
+  color: red;
+}
+
+.menu-action [role='menuitem']:hover {
+  background-color: #ccc;
+}

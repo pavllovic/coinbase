@@ -1,0 +1,6 @@
+include ./article-preview/article-preview.pug
+
+div(class='article-preview-list')
+  - for (let n = 1; n <= 3; n++) 
+      - let meta = require(`../articles/${n}/meta.json`)
+      +article-preview(meta, n)

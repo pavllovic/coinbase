@@ -1,0 +1,8 @@
+.footer--title {
+  /* margin-bottom: calc(30 / 18 * 1em); */
+  margin-bottom: calc(var(--bl) * 0.75);
+  color: var(--color-text-light);
+  font-size: var(--text-fluid-lg);
+  font-weight: normal;
+  line-height: calc(24 / 18 * 1em);
+}

@@ -1,0 +1,95 @@
+.form-popup {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.25s ease;
+  visibility: hidden;
+}
+
+.form-popup[aria-hidden='false'] {
+  background-color: rgba(0, 0, 0, 0.1);
+  visibility: visible;
+}
+
+.form-popup-box {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: calc(var(--bl) * 1.25) var(--fixed-h-md);
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  background-color: #fff;
+  border-radius: calc(var(--bl) * 0.75);
+  box-shadow: 0 0 20px 0 hsl(0, 0%, 0%, 0.1);
+  transform: translateY(30%);
+  visibility: hidden;
+}
+
+.form-popup[aria-hidden='true'] .form-popup-box {
+  animation-name: form-popup_hide;
+}
+
+.form-popup[aria-hidden='false'] .form-popup-box {
+  animation-name: form-popup_show;
+}
+
+@keyframes form-popup_show {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    visibility: visible;
+  }
+}
+
+@keyframes form-popup_hide {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+    visibility: visible;
+  }
+
+  99% {
+    opacity: 0;
+    transform: translateY(30%);
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(30%);
+    visibility: hidden;
+  }
+}
+
+.form-popup--txt {
+  margin: auto;
+  font-size: var(--text-fluid-md);
+  line-height: 1.5;
+}
+
+.form-popup--controls {
+  display: flex;
+  width: calc(100% + 20px);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+  margin-top: calc(var(--bl) / 2);
+}
+
+.form-popup--controls button {
+  margin: calc(var(--bl) / 4) 10px;
+}

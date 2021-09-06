@@ -1,0 +1,12 @@
+:root {
+  /* static spaces */
+  --fixed-h-sm: 10px;
+  --fixed-h-md: 20px;
+
+  /* fluid spaces */
+  --fluid-h-sm: max(10px, min(calc(10px + (80 - 10) * var(--ratio)), 80px));
+
+  /* btn vertical spaces */
+  --btn-padding: calc(17 / 14 * var(--text-fluid-sm));
+  --btn-margin: calc(2 * var(--bl) - var(--btn-padding) * 2 - 2rem);
+}

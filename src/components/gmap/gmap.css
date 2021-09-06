@@ -1,0 +1,17 @@
+@import './contact.css';
+
+.gmap {
+  max-width: 73rem;
+  height: 40rem;
+}
+
+.gmap-overlay {
+  position: fixed;
+  top: -100vh;
+  left: -100vw;
+  width: 200vw;
+  height: 200vh;
+  border: none;
+  background: var(--bg-gradient);
+  opacity: 0.3;
+}

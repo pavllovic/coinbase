@@ -1,0 +1,16 @@
+.modal--header {
+  margin-bottom: calc(var(--bl) / 2 + (var(--bl) - var(--text-title) * 1.5));
+  color: var(--color-main);
+  font-family: var(--font-bold);
+  font-size: var(--text-title);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+@supports (background-clip: text) {
+  .modal--header {
+    background: linear-gradient(178deg, var(--color-main) -10%, var(--color-second) 210%);
+    background-clip: text;
+    color: transparent;
+  }
+}

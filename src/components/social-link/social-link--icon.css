@@ -1,0 +1,17 @@
+.social-link svg {
+  width: min(1.6rem, 20px);
+  height: auto;
+  max-height: 100%;
+  fill: var(--color-text-gray);
+  transition: fill ease-in 0.15s;
+}
+
+.social-link--link:hover svg {
+  fill: var(--color-text-light);
+}
+
+@media not all and (any-pointer: coarse) {
+  .social-link svg {
+    width: min(1.3rem, 20px);
+  }
+}

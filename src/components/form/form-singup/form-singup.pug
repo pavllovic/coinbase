@@ -1,0 +1,30 @@
+include ../form-popup/form-popup.pug
+form(class='form' name='form-singup' id='form-singup')
+  - 
+    let singupSuccessPopup = {
+      type: 'success',
+      controls: [{type: 'close-popup', txt: 'close'}]
+    }
+    let singupErrorPopup = {
+      type: 'error',
+      controls: [{type: 'close-popup', txt: 'close'}, {type: 'resend-form', txt: 'retry'}]
+    }
+  +form-popup(singupSuccessPopup)
+  +form-popup(singupErrorPopup)
+  div(class='form--field')
+    input(id='singup-name' type='text' placeholder=' ' name='name' required)
+    label(for='singup-name') Full Name
+    div(class='error' role='status' aria-live='polite' data-error='name')
+  div(class='form--field')
+    input(id='singup-email' type='text' inputmode='email' placeholder=' ' name='email' required)
+    label(for='singup-email') Email
+    div(class='error' role='status' aria-live='polite' data-error='email')
+  div(class='form--field')
+    input(id='singup-password' type='password' placeholder=' ' name='password' required)
+    label(for='singup-password') Password
+    div(class='error' role='status' aria-live='polite' data-error='password')
+  div(class='form--field')
+    input(id='singup-confirm' type='password' placeholder=' ' name='confirm_password' data-confirm='singup-password' required)
+    label(for='singup-confirm') Confirm Password
+    div(class='error' role='status' aria-live='polite' data-error='confirm_password')
+  button(class='btn' type='submit') singup

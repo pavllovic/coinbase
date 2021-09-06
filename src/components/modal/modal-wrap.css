@@ -1,0 +1,45 @@
+.modal-wrap {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+  transition-duration: 0.25s, 0s;
+  transition-property: background-color, visibility;
+  transition-timing-function: ease-in-out, ease-in-out;
+}
+
+.modal-wrap::-webkit-scrollbar {
+  width: 0;
+}
+
+.modal-wrap::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.modal-wrap::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+.modal-wrap[aria-hidden='true'] {
+  background-color: hsl(0, 0%, 0%, 0);
+  transition-delay: 0.25s, 0.5s;
+  visibility: hidden;
+}
+
+.modal-wrap[aria-hidden='false'] {
+  background-color: hsl(0, 0%, 0%, 0.3);
+  transition-delay: 0s, 0s;
+  visibility: visible;
+}

@@ -1,0 +1,28 @@
+mixin article-preview(meta, num)
+  li(class='article-preview')
+    picture
+      source(srcset=`${require(`Articles/${num}/img/preview/${meta.img.name}-390w.webp`).default} 390w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-585w.webp`).default} 585w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-780w.webp`).default} 780w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-1170w.webp`).default} 1170w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-1756w.webp`).default} 1756w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-2340w.webp`).default} 2340w`
+            sizes='(min-width: 1170px) 1170px, 100vw' 
+            type='image/webp')
+      source(srcset=`${require(`Articles/${num}/img/preview/${meta.img.name}-390w.jpg`).default} 390w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-585w.jpg`).default} 585w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-780w.jpg`).default} 780w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-1170w.jpg`).default} 1170w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-1756w.jpg`).default} 1756w,
+                     ${require(`Articles/${num}/img/preview/${meta.img.name}-2340w.jpg`).default} 2340w`
+            sizes='(min-width: 1170px) 1170px, 100vw' 
+            type='image/jpg')
+      img(class='article-preview--img' src=require(`Articles/${num}/img/preview/${meta.img.name}-1170w.jpg`).default width='1170' height='520' alt=`${meta.img.alt}`)
+    div(class='article-preview--txt border-gradient')
+      h2(class='article-preview--header') #{meta.title}.
+      div(class='article-preview--meta')
+        <span>#{meta.date.day}</span> <span>#{meta.date.mounth}</span> <span>#{meta.date.year}</span>
+        <span>| #{meta.tags[0]}</span>
+      - let text = require(`Articles/${num}/preview-text.md`);
+      | !{text}
+      a(class='article-preview--link btn' href=`./article-${num}.html`) discover

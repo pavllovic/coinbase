@@ -1,0 +1,12 @@
+include ../modal-controls/modal-controls.pug
+include ../../card/card.pug
+
+div(class='modal modal-types' id='modal-types-coin' aria-hidden='true' role='dialog' aria-label='choose product' aria-modal='true' tabindex='-1')
+  +modal-controls(false, true) 
+  h2(class='modal--header') Sell bitcoin
+  p(class='modal--msg') Choose your preffered product to continue
+  div(class='modal-types--list')
+    button(class='modal-types--list-item' data-modal='btc')
+      +card('btc', 'Bitcoin')
+    button(class='modal-types--list-item' data-modal='eth')
+      +card('eth', 'Ethereum')

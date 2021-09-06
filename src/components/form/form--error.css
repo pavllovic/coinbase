@@ -1,0 +1,18 @@
+.error {
+  overflow: hidden;
+  height: 0;
+  background-color: hsl(351, 72%, 93%);
+  border-radius: 5px;
+  text-align: left;
+  transform: translateY(calc(var(--bl) * 0.125));
+  transition: height 0.15s ease-in;
+}
+
+.error span {
+  display: block;
+  padding: calc(var(--bl) * 0.25);
+  font-size: var(--text-sm);
+  line-height: 2rem;
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
+}

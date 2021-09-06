@@ -1,0 +1,9 @@
+@import './article--sibling-link.css';
+@import './article--sibling-name.css';
+@import './article--sibling-type.css';
+
+.article--sibling {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

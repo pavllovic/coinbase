@@ -1,0 +1,18 @@
+include ../modal-controls/modal-controls.pug
+
+div(class='modal-wrap' id='modal-auth' aria-hidden='true' tabindex='-1')
+  div(class='modal-box')
+    div(class='modal' id='modal-login' role='dialog' aria-modal='true' aria-label='login form' aria-hidden='true' tabindex='-1')
+      +modal-controls(false, true)  
+      h2(class='modal--header') Welcome back!
+      p(class='modal--msg') Kindly fill in your login details to proceed
+      include ../../form/form-login/form-login.pug
+      p(class='modal--toogle') Don’t have an account yet? 
+        button(data-modal='singup') Sign Up
+    div(class='modal' id='modal-singup' role='dialog' aria-modal='true' aria-label='singup form' aria-hidden='true' tabindex='-1') 
+      +modal-controls(true, true) 
+      h2(class='modal--header') Sign Up
+      p(class='modal--msg') There’s no charge upon registration
+      include ../../form/form-singup/form-singup.pug
+      p(class='modal--toogle') Already a member? 
+        button(data-modal='login') Login

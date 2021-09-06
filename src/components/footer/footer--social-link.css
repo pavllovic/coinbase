@@ -1,0 +1,29 @@
+@import '../social-link/social-link.css';
+
+.footer .social-link {
+  margin: calc((2 * var(--bl) - 40px) / 2) 0;
+}
+
+@media (min-width: 23em) {
+  .footer .social-link {
+    margin-top: 0;
+    margin-right: calc((-40px + min(1.6rem, 20px)) / 2);
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 75em) {
+  .footer .social-link {
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: calc((-40px + min(1.6rem, 20px)) / 2);
+    margin-left: calc((-40px + min(1.6rem, 20px)) / 2);
+  }
+
+  @media not all and (any-pointer: coarse) {
+    .footer .social-link {
+      margin-bottom: calc((-26px + min(1.3rem, 20px)) / 2);
+      margin-left: calc((-26px + min(1.3rem, 20px)) / 2);
+    }
+  }
+}

@@ -1,0 +1,6 @@
+include ./transfers--item/transfers--item.pug
+- let transfers = require(`Components/table/transfers/example-obj.json`)
+
+ul(class='transfers')
+  each obj in transfers
+    +transfers--item(obj)

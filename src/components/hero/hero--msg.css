@@ -1,0 +1,17 @@
+.hero--msg {
+  max-width: 24.5em;
+  margin-bottom: calc(3 * var(--bl) - var(--text-fluid-lg) * 4.5);
+  font-size: var(--text-fluid-lg);
+  line-height: 1.5;
+}
+
+.hero-index .hero--msg,
+.hero-about .hero--msg {
+  max-width: 26em;
+}
+
+@media (min-width: 27.5em) {
+  .hero--msg {
+    margin-bottom: calc(2 * var(--bl) - var(--text-fluid-lg) * 3);
+  }
+}

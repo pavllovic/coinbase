@@ -1,0 +1,8 @@
+.logo--text {
+  width: 9.8rem;
+  height: 1.7rem;
+  margin-bottom: 0.3rem;
+  margin-left: 6px;
+  fill: hsl(0, 0%, 36%, 100%);
+  stroke: hsl(0, 0%, 36%, 100%);
+}

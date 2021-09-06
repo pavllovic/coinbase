@@ -1,0 +1,22 @@
+:focus,
+[tabindex='0']:focus,
+[class][tabindex='0']:focus,
+button:focus,
+[class]:focus-visible {
+  box-shadow: 0 0 0 3px hsl(200, 55%, 45%);
+  outline: 0;
+}
+
+:focus-visible,
+[tabindex='0']:focus-visible,
+[class][tabindex='0']:focus-visible,
+button:focus-visible,
+[class]:focus-visible {
+  box-shadow: 0 0 0 3px hsl(200, 100%, 45%);
+  outline: 0;
+}
+
+:focus:not(:focus-visible) {
+  box-shadow: none;
+  outline: 0;
+}

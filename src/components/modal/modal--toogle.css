@@ -1,0 +1,24 @@
+.modal--toogle {
+  margin-top: var(--bl);
+  font-size: var(--text-sm);
+  line-height: 2rem;
+}
+
+.modal--toogle button {
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  line-height: 2rem;
+  text-decoration: underline;
+}
+
+@media (min-width: 60em) {
+  .modal--toogle,
+  .modal--toogle button {
+    font-size: var(--text-xs);
+  }
+}

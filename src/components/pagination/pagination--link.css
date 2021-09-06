@@ -1,0 +1,55 @@
+.pagination--link {
+  display: flex;
+  width: calc(var(--bl) * 1.2);
+  height: calc(var(--bl) * 1.2);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid hsl(0, 0%, 88%);
+  background: var(--bg-light);
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 0 hsl(0, 0%, 0%, 0.07), 0 0 0 0 hsl(0, 0%, 0%, 0.07);
+  color: var(--color-text);
+  cursor: pointer;
+  font-size: var(--text-fluid-md);
+  line-height: 2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: box-shadow 0.15s ease-in;
+  user-select: none;
+}
+
+.pagination--link_current {
+  border: none;
+  background: var(--btn-gradient);
+  color: var(--color-text-light);
+  cursor: auto;
+}
+
+.pagination--link_fluid {
+  width: auto;
+  padding: 0 1.2em;
+}
+
+@media (min-width: 20em) {
+  .pagination--link {
+    width: calc(var(--bl) * 1.5);
+    height: calc(var(--bl) * 1.5);
+  }
+
+  .pagination--link_fluid {
+    width: auto;
+    padding: 0 2em;
+  }
+}
+
+.pagination--link:hover {
+  box-shadow: inset 0 0 0 0 hsl(0, 0%, 0%, 0.07), 0 0 10px 0 hsl(0, 0%, 0%, 0.07);
+}
+
+.pagination--link:active {
+  box-shadow: inset 0 0 5px 0 hsl(0, 0%, 0%, 0.07), 0 0 0 0 hsl(0, 0%, 0%, 0.07);
+}
+
+.pagination--link_current:hover {
+  box-shadow: none;
+}

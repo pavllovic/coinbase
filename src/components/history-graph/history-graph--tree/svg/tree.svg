@@ -1,0 +1,39 @@
+<svg width="17" height="705" viewBox="0 0 17 705" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<rect x="5.50781" width="5.50781" height="705" fill="url(#tree-gradient)"/>
+<path d="M8.26172 49.9376C12.8245 49.9376 16.5234 47.9649 16.5234 45.5314C16.5234 43.0979 12.8245 41.1251 8.26172 41.1251C3.6989 41.1251 0 43.0979 0 45.5314C0 47.9649 3.6989 49.9376 8.26172 49.9376Z" fill="url(#stage_1-gradient)"/>
+<path d="M8.26172 160.388C12.8245 160.388 16.5234 158.415 16.5234 155.981C16.5234 153.548 12.8245 151.575 8.26172 151.575C3.6989 151.575 0 153.548 0 155.981C0 158.415 3.6989 160.388 8.26172 160.388Z" fill="url(#stage_2-gradient)"/>
+<path d="M8.26172 297.862C12.8245 297.862 16.5234 295.89 16.5234 293.456C16.5234 291.023 12.8245 289.05 8.26172 289.05C3.6989 289.05 0 291.023 0 293.456C0 295.89 3.6989 297.862 8.26172 297.862Z" fill="url(#stage_3-gradient)"/>
+<path d="M8.26172 381.287C12.8245 381.287 16.5234 379.315 16.5234 376.881C16.5234 374.448 12.8245 372.475 8.26172 372.475C3.6989 372.475 0 374.448 0 376.881C0 379.315 3.6989 381.287 8.26172 381.287Z" fill="url(#stage_4-gradient)"/>
+<path d="M8.26172 487.625C12.8245 487.625 16.5234 485.652 16.5234 483.219C16.5234 480.785 12.8245 478.812 8.26172 478.812C3.6989 478.812 0 480.785 0 483.219C0 485.652 3.6989 487.625 8.26172 487.625Z" fill="url(#stage_5-gradient)"/>
+<path d="M8.26172 571.05C12.8245 571.05 16.5234 569.078 16.5234 566.644C16.5234 564.211 12.8245 562.238 8.26172 562.238C3.6989 562.238 0 564.211 0 566.644C0 569.078 3.6989 571.05 8.26172 571.05Z" fill="url(#stage_6-gradient)"/>
+<defs>
+<linearGradient id="tree-gradient" x1="8.53711" y1="-110.972" x2="297.801" y2="-40.0145" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FD749B"/>
+<stop offset="1" stop-color="#281AC8"/>
+</linearGradient>
+<linearGradient id="stage_1-gradient" x1="9.08789" y1="39.738" x2="9.35325" y2="55.3604" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FD749B"/>
+<stop offset="1" stop-color="#281AC8"/>
+</linearGradient>
+<linearGradient id="stage_2-gradient" x1="9.08789" y1="150.188" x2="9.35325" y2="165.81" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FD749B"/>
+<stop offset="1" stop-color="#281AC8"/>
+</linearGradient>
+<linearGradient id="stage_3-gradient" x1="9.08789" y1="287.663" x2="9.35325" y2="303.285" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FD749B"/>
+<stop offset="1" stop-color="#281AC8"/>
+</linearGradient>
+<linearGradient id="stage_4-gradient" x1="9.08789" y1="371.088" x2="9.35325" y2="386.71" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FD749B"/>
+<stop offset="1" stop-color="#281AC8"/>
+</linearGradient>
+<linearGradient id="stage_5-gradient" x1="9.08789" y1="477.425" x2="9.35325" y2="493.048" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FD749B"/>
+<stop offset="1" stop-color="#281AC8"/>
+</linearGradient>
+<linearGradient id="stage_6-gradient" x1="9.08789" y1="560.851" x2="9.35325" y2="576.473" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FD749B"/>
+<stop offset="1" stop-color="#281AC8"/>
+</linearGradient>
+</defs>
+</svg>

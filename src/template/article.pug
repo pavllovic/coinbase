@@ -1,0 +1,35 @@
+extends ./layout/base.pug
+
+block preload
+  //- HtmlWebpackPlugin pass prop num
+  - let meta = require(`Articles/${num}/meta.json`)
+  link(rel='preload' href=require(`Articles/${num}/img/preview/${meta.img.name}-2340w.webp`).default as='image' 
+      media='(min-width: 1757px) and (-webkit-max-device-pixel-ratio: 1.5),' +
+            '(min-width: 1014px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.9),' +
+            '(min-width: 678px) and (-webkit-min-device-pixel-ratio: 3)')
+  link(rel='preload' href=require(`Articles/${num}/img/preview/${meta.img.name}-1756w.webp`).default as='image' 
+      media='(min-width: 1171px) and (max-width:1756px) and (-webkit-max-device-pixel-ratio: 1.5),' +
+            '(min-width: 717px) and (max-width: 1013px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.9),' +
+            '(min-width: 478px) and (max-width: 677px) and (-webkit-min-device-pixel-ratio: 3)')
+  link(rel='preload' href=require(`Articles/${num}/img/preview/${meta.img.name}-1170w.webp`).default as='image' 
+      media='(min-width: 781px) and (max-width:1170px) and (-webkit-max-device-pixel-ratio: 1.5),' +
+            '(min-width: 478px) and (max-width: 716px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.9),' +
+            '(min-width: 319px) and (max-width: 477px) and (-webkit-min-device-pixel-ratio: 3)')
+  link(rel='preload' href=require(`Articles/${num}/img/preview/${meta.img.name}-780w.webp`).default as='image' 
+      media='(max-width: 780px) and (-webkit-max-device-pixel-ratio: 1.5),' +
+            '(max-width: 477px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.9),' +
+            '(max-width: 318px) and (-webkit-min-device-pixel-ratio: 3)')
+  //- link(rel='preload' href=require('Fonts/poppins-regular.woff2').default as='font' type='font/woff2')
+
+block content
+  include ../components/header/header.pug
+  main
+    include ../components/article/article.pug
+    +article(meta)
+  include ../components/article-form/article-form.pug
+  include ../components/footer/footer.pug
+  include ../components/logo/svg/spriteLogoIcon.svg
+  include ../images/icon/card/spriteCardIcon.svg
+  include ../components/modal/modal-auth/modal-auth.pug
+  include ../components/modal/modal-trade/modal-trade-coin.pug
+  include ../components/modal/modal-trade/modal-trade-card.pug

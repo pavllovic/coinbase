@@ -1,0 +1,29 @@
+.history-graph--tree {
+  display: none;
+  height: 100%;
+}
+
+.history-graph--tree svg {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+@media (min-width: 20em) {
+  .history-graph--tree {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+}
+
+@media (min-width: 60em) {
+  @supports (display: grid) {
+    .history-graph--tree {
+      position: static;
+      grid-column: 2;
+      grid-row: 1/4;
+    }
+  }
+}

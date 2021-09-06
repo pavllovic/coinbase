@@ -1,0 +1,7 @@
+.article--share-label {
+  margin-top: calc(var(--bl) * 0.25);
+  margin-right: calc(var(--bl) * 0.4);
+  margin-bottom: calc(var(--bl) * 0.25);
+  font-size: var(--text-fluid-md);
+  line-height: calc(var(--bl) / 2);
+}

@@ -1,0 +1,7 @@
+@import './cite--source.css';
+@import './cite--txt.css';
+
+.cite {
+  display: flex;
+  flex-direction: column;
+}

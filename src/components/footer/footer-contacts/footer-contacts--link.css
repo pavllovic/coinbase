@@ -1,0 +1,11 @@
+.footer-contacts--link {
+  border-radius: 2px;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color ease-in 0.15s;
+}
+
+.footer-contacts--link:hover {
+  color: var(--color-text-light);
+}

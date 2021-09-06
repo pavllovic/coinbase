@@ -1,0 +1,7 @@
+mixin menu-action(id, btn, items)  
+  div(class=`menu-${id}` id=`menu-action-${id}`)
+    button(type='button' aria-haspopup='true' aria-expanded='false' aria-controls=`${id}-actions`) #{btn.text}
+    div(id=`${id}-actions` tabindex='0' role='menu' aria-hidden='true' aria-activedescendant='' aria-labelledby='btn-menu')
+      each item in items
+        div(id=`action-${item.action}` role='menuitem' data-modal=`${item.action}`) #{item.text}
+      
