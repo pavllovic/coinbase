@@ -5,6 +5,7 @@ html(lang='en')
     meta(content='width=device-width, initial-scale=1' name='viewport')
     meta(name="referrer" content="strict-origin-when-cross-origin")
     title #{htmlWebpackPlugin.options.title}
+    block preload
     link(rel='icon' href=require('Images/favicon/favicon.ico').default  sizes='any')
     link(rel='icon' href=require('Images/favicon/icon.svg').default type='image/svg+xml')
     link(rel='apple-touch-icon' href=require('Images/favicon/apple-touch-icon.png').default)
@@ -25,6 +26,5 @@ html(lang='en')
           url(#{require('Fonts/poppins-bold.woff2').default}) format('woff2'),
           url(#{require('Fonts/poppins-bold.woff').default}) format('woff');
       }
-    block preload
   body
     block content

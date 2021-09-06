@@ -19,7 +19,7 @@ block preload
       media='(max-width: 780px) and (-webkit-max-device-pixel-ratio: 1.5),' +
             '(max-width: 477px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.9),' +
             '(max-width: 318px) and (-webkit-min-device-pixel-ratio: 3)')
-  //- link(rel='preload' href=require('Fonts/poppins-regular.woff2').default as='font' type='font/woff2')
+  link(rel='preload' href=require('Fonts/poppins-regular.woff2').default as='font' type='font/woff2')
 
 block content
   include ../components/header/header.pug
