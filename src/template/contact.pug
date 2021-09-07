@@ -8,7 +8,7 @@ block preload
             '(min-width: 1241px) and (-webkit-max-device-pixel-ratio: 1.5)')
   link(rel='preload' href=require('Images/hero/contact-414w.png').default as='image' 
       media='(min-width: 960px) and (max-width: 1240px) and (-webkit-max-device-pixel-ratio: 1.5)')
-  link(rel='preload' href=require('Fonts/poppins-regular.woff2').default as='font' type='font/woff2')
+  link(rel='preload' href=require('Fonts/poppins-regular.woff2').default as='font' type='font/woff2' crossorigin)
 
 block content
   include ../components/header/header.pug
@@ -45,4 +45,4 @@ block content
   include ../components/modal/modal-auth/modal-auth.pug
   include ../components/modal/modal-trade/modal-trade-coin.pug
   include ../components/modal/modal-trade/modal-trade-card.pug
-  script(defer src='https://maps.googleapis.com/maps/api/js')
+  script(defer src='https://maps.googleapis.com/maps/api/js?callback=initMap')

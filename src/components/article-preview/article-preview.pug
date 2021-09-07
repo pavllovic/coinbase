@@ -21,7 +21,7 @@ mixin article-preview(meta, num)
     div(class='article-preview--txt border-gradient')
       h2(class='article-preview--header') #{meta.title}.
       div(class='article-preview--meta').
-        #{meta.date.day} #{meta.date.mounth},#{meta.date.year} | #{meta.tags[0]}
+        #{meta.date.day} #{meta.date.mounth}, #{meta.date.year} | #{meta.tags[0]}
       - let text = require(`Articles/${num}/preview-text.md`);
       | !{text}
       a(class='article-preview--link btn' href=`./article-${num}.html`) discover

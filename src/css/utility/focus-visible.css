@@ -16,7 +16,10 @@ button:focus-visible,
   outline: 0;
 }
 
-:focus:not(:focus-visible) {
+:focus:not(:focus-visible),
+[tabindex='0']:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+[class]:focus:not(:focus-visible) {
   box-shadow: none;
   outline: 0;
 }
