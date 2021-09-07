@@ -12,6 +12,6 @@
   width: 200vw;
   height: 200vh;
   border: none;
-  background: var(--bg-gradient);
-  opacity: 0.3;
+  background: var(--btn-gradient);
+  opacity: 0.5;
 }
