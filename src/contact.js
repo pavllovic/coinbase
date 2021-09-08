@@ -1,4 +1,5 @@
-import initMap from './components/gmap/gmap.js';
+import initMap from './components/gmap/gmap.js'; // eslint-disable-line
+import style from './css/contact.css'; // eslint-disable-line
 
 window.initMap = initMap;
 

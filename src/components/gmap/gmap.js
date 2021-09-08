@@ -1,4 +1,5 @@
 const initMap = function() {
+// export default function initMap() {
   const map = new window.google.maps.Map(document.getElementById('gmap'), {
     center: { lat: 6.443465303274183, lng: 3.4154240653889745 },
     zoom: 14,
@@ -6,9 +7,11 @@ const initMap = function() {
   });
 
   const info = `<ul class='contact'>
-                  <li class='contact--item contact--address'>13 Sawyer Crescent Victoria Island Lagos Nigeria</li>
-                  <li class='contact--item contact--phone'>(+234) 137632128</li> 
-                  <li class='contact--item contact--email'>support@coinbase.com</li> 
+                  <li class='contact--item contact--address'>
+                     13 Sawyer Crescent Victoria Island Lagos Nigeria
+                  </li>
+                  <li class='contact--item contact--phone'>(+234) 137632128</li>
+                  <li class='contact--item contact--email'>support@coinbase.com</li>
                 </ul>`;
 
   const infowindow = new window.google.maps.InfoWindow({

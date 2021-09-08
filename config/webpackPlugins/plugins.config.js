@@ -41,11 +41,13 @@ const babelEsmPlugin = new BabelEsmPlugin({
 });
 
 const ignoreEmitPlugin = new IgnoreEmitPlugin([
-  /style\.js$/, /(about|article|blog)\.js$/
+  /(about|article|blog)\.style\.js$/, /(about|article|blog)\.js$/
 ]);
 
 const htmlWebpackSkipAssetsPlugin = new HtmlWebpackSkipAssetsPlugin({
-  excludeAssets: [/style\.js$/, /(about|article|blog)\.js$/]
+  excludeAssets: [
+    /(about|article|blog)\.style\.js$/, /(about|article|blog)\.js$/
+  ]
 });
 
 const htmlWebpackPlagin = [
@@ -79,7 +81,7 @@ const htmlWebpackPlagin = [
     title: 'CoinBase | contact us',
     filename: 'contact.html',
     template: './src/template/contact.pug',
-    inject: 'body',
+    inject: false,
     chunks: ['common', 'contact', 'comment'],
     minify: {
       collapseWhitespace: !isDev,

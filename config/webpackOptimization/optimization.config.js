@@ -8,13 +8,13 @@ const optimization = {
   },
   splitChunks: {
     cacheGroups: {
-      common_css: {
-        name: 'common.style',
-        test: /\.css$/,
-        minChunks: 5,
-        chunks: 'all',
-        enforce: true,
-      },
+      // common_css: {
+      //   name: 'common.style',
+      //   test: /\.css$/,
+      //   minChunks: 5,
+      //   chunks: 'all',
+      //   enforce: true,
+      // },
       // common_js: {
       //   name: (module, chunks) => {
       //     const arrChunkName = []
