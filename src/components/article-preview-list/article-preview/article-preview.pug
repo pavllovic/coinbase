@@ -1,8 +1,6 @@
 mixin article-preview(meta, num)
   div(class='article-preview')
-    div(class='article-preview--meta')
-      <span>#{meta.date.day}</span> <span>#{meta.date.mounth}</span> <span>#{meta.date.year}</span>
-      <span>| #{meta.tags[0]}</span>
+    div(class='article-preview--meta') #{meta.date.day} #{meta.date.mounth}, #{meta.date.year} | #{meta.tags[0]}
     h3(class='article-preview--header') #{meta.title}.
     - let temp = require(`Articles/${num}/preview-text.md`);
     | !{temp}
