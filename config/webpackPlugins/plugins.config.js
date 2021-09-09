@@ -141,7 +141,7 @@ const eslintPlugin = new ESLintPlugin({
 
 const miniCssExtractPlugin = new MiniCssExtractPlugin({
   filename: isDev? 'css/[name].css' : 'css/[contenthash].[name].css',
-  chunkFilename: isDev? 'css/[id].css' : 'css/[contenthash].[id].css'
+  // chunkFilename: isDev? 'css/[id].css' : 'css/[contenthash].[id].css'
 })
 
 module.exports = {
