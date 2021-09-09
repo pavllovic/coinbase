@@ -1,4 +1,4 @@
-import { modal, modalMethod } from 'Lib/components/modal/modal';
+import { modal, modalMethod } from 'Lib/components/modal/modal.js';
 
 const ModalAuth = function(wrap, startModal, btns, login, singup) {
   modal.call(this, wrap, startModal, btns);

@@ -8,7 +8,6 @@ function getTradeModal(type, Validator, validatedInputs, Form) {
   const wrap = document.getElementById(`modal-trade-${type}`);
   const select = wrap.querySelector(`#modal-types-${type}`);
   const openers = Array.from(document.querySelectorAll(`[data-modal='${type}']`));
-
   return new ModalTrade(wrap, select, openers, form);
 }
 

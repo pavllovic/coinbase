@@ -19,7 +19,6 @@ const formMethod = {
 
   setListeners: function() {
     this.form.addEventListener('submit', this);
-
     this.inputs.forEach((value) => {
       value.addEventListener('invalid', this);
       value.addEventListener('input', this);
