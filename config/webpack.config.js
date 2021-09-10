@@ -55,20 +55,20 @@ const makeConfig = () => {
         plugins.stylelintPlugin,
         plugins.eslintPlugin,
 
-        plugins.babelEsmPlugin,
-        plugins.scriptExtHtmlWebpackPlugin,
-        plugins.ignoreEmitPlugin,
-        plugins.htmlWebpackSkipAssetsPlugin,
+        // plugins.babelEsmPlugin,
+        // plugins.scriptExtHtmlWebpackPlugin,
+        // plugins.ignoreEmitPlugin,
+        // plugins.htmlWebpackSkipAssetsPlugin,
       ]
 
-      // if(es6) {
-      //   arr = arr.concat([
-      //     plugins.babelEsmPlugin,
-      //     plugins.scriptExtHtmlWebpackPlugin,
-      //     plugins.ignoreEmitPlugin,
-      //     plugins.htmlWebpackSkipAssetsPlugin,
-      //   ]);
-      // }
+      if(es6) {
+        arr = arr.concat([
+          plugins.babelEsmPlugin,
+          plugins.scriptExtHtmlWebpackPlugin,
+          plugins.ignoreEmitPlugin,
+          plugins.htmlWebpackSkipAssetsPlugin,
+        ]);
+      }
 
       if(!isDev) {
         arr = arr.concat([
