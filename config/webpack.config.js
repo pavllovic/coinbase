@@ -9,11 +9,9 @@ const isDev = process.env.NODE_ENV === 'development';
 const es6 = process.env.es6 === 'true';
 
 const entry = {  
-  // contact: ['./src/contact.js', './src/css/contact.css'],
   contact: ['./src/contact.js'],
   article: ['./src/css/article.css'],
   about: ['./src/css/about.css'],
-  // index: ['./src/index.js', './src/css/index.css'],
   index: ['./src/index.js'],
   blog: ['./src/css/blog.css'],
   common: ['./src/common.js'],
@@ -54,11 +52,6 @@ const makeConfig = () => {
         ...plugins.htmlWebpackPlagin,
         plugins.stylelintPlugin,
         plugins.eslintPlugin,
-
-        // plugins.babelEsmPlugin,
-        // plugins.scriptExtHtmlWebpackPlugin,
-        // plugins.ignoreEmitPlugin,
-        // plugins.htmlWebpackSkipAssetsPlugin,
       ]
 
       if(es6) {

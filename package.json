@@ -14,8 +14,7 @@
   "browserslist": [
     "last 2 versions",
     "not dead",
-    "> 0.9%",
-    "ie 11"
+    "> 1%"
   ],
   "devDependencies": {
     "@babel/cli": "^7.11.6",

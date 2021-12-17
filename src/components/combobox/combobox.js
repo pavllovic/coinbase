@@ -3,7 +3,7 @@ import { combobox, comboboxMethod } from 'Lib/components/combobox/combobox.js';
 const Combobox = combobox;
 
 Combobox.prototype = {
-  constructor: combobox,
+  constructor: Combobox,
   init: comboboxMethod.init,
   toogleOptions: comboboxMethod.toogleOptions,
   openOptions: comboboxMethod.openOptions,
